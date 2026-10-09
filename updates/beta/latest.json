@@ -1,0 +1,41 @@
+{
+  "version": "0.11.0",
+  "notes": "New\n• Smart zooms: a 100% → 110% push-in only where a moment calls for it (a reaction, disbelief, a punchline, a direct-to-camera line)\n• Zooms target the right layer: the facecam when your face is the point, the gameplay when the game is\n• \"Look right there\": the zoom pushes toward the spot that changes on screen, not just the centre\n• Zoom notes: \"remove this zoom\", \"make the zoom smaller\", \"zoom in more here\", \"zoom the facecam, not the gameplay\", \"keep this at 100%\", \"make this a 110% punch-in\"\n• Solis learns your style: repeated notes like \"music is too loud\" or \"hold reactions longer\" can be remembered for your next projects (you choose; manage them in Settings › Creator memory)\n• Send Feedback: tell us what Solis itself should do better, right from the app\n\nImproved\n• Dead space: quiet stretches under about -40 dB are cut when nothing is happening, but whispers, reactions, comedic pauses and visible action are kept\n• General notes like \"too many zooms\", \"fewer sound effects\" or \"stop cutting awkward silence\" now apply to the whole edit\n\nFixed\n• Zooms no longer land on plain dialogue or on gameplay lines just because they contain a number",
+  "pub_date": "2026-10-09T09:12:15.931Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkRiKzJZb2daSnRXWmFJaUYzczJKdGhTOWdVK1Y0djF1WVR4ZVNBM3dQRzlnZjdsM2FIeDYzRDBmeGlmT3NsRzhhdG10eklOaittVjU5Q1lJZDM2Wmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTM0NjMxCWZpbGU6U29saXMgRWRpdF8wLjExLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTEuMAoyKy9DSVZLamwycGE2Z2hxcXA3WFAxS2x2VlMrZlZtQWJWQ05Yem1OcWJqNmZZWm04eVZtREJoT0dDU1daZ1NWTWVPUG5LZHNHdHdPNVorRlhwNUlDdz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.11.0/Solis_0.11.0_x64-setup.exe"
+    }
+  },
+  "solis": {
+    "channel": "beta",
+    "policy": "NORMAL",
+    "minimumSupportedVersion": null,
+    "notes": {
+      "new": [
+        "Smart zooms: a 100% → 110% push-in only where a moment calls for it (a reaction, disbelief, a punchline, a direct-to-camera line)",
+        "Zooms target the right layer: the facecam when your face is the point, the gameplay when the game is",
+        "\"Look right there\": the zoom pushes toward the spot that changes on screen, not just the centre",
+        "Zoom notes: \"remove this zoom\", \"make the zoom smaller\", \"zoom in more here\", \"zoom the facecam, not the gameplay\", \"keep this at 100%\", \"make this a 110% punch-in\"",
+        "Solis learns your style: repeated notes like \"music is too loud\" or \"hold reactions longer\" can be remembered for your next projects (you choose; manage them in Settings › Creator memory)",
+        "Send Feedback: tell us what Solis itself should do better, right from the app"
+      ],
+      "improved": [
+        "Dead space: quiet stretches under about -40 dB are cut when nothing is happening, but whispers, reactions, comedic pauses and visible action are kept",
+        "General notes like \"too many zooms\", \"fewer sound effects\" or \"stop cutting awkward silence\" now apply to the whole edit"
+      ],
+      "fixed": [
+        "Zooms no longer land on plain dialogue or on gameplay lines just because they contain a number"
+      ],
+      "version": "0.11.0"
+    },
+    "companionVersion": "0.11.0",
+    "bridgeVersion": "0.11.0",
+    "protocolVersion": 1,
+    "migrationVersion": 1,
+    "sha256": "e7f6be11d4437a0641e4d61b79c75a738ed1ecc67c56f7bdfe5bb64771e95165",
+    "releaseDate": "2026-10-09",
+    "publishedBy": "junior"
+  }
+}

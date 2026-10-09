@@ -1,11 +1,11 @@
 {
-  "version": "0.12.0",
-  "notes": "New\n• Cut Video: removes dead space, stutters and repeated takes, cleans up empty audio tracks, and gives you a clean base cut\n• Fully Edit Video: the full creator edit; after Cut Video it builds on your cut instead of starting over\n• Apply Changes: one clear button applies all your notes in Premiere, with Auto-apply on by default\n• Delete Project: removes the Solis project; your original videos and Premiere project are never deleted\n• Premiere is saved automatically after a verified Solis edit or revision (Settings › Premiere)\n\nImproved\n• Much less dead space: Solis now listens to the voice tracks only, so game audio no longer hides the pauses between sentences\n• False starts are removed: \"hello\" … \"hello everybody, welcome back\" keeps the clean second take (the same word 10+ seconds later is left alone)\n• Stutters like \"I-I-I think\" or \"gonna gonna\" are cleaned up; no cuts through words\n• Sound effects only where something happens (an image pop, a reveal, a bleep); normal cuts get none\n• Music is now clearly audible under your voice\n• Empty audio tracks are left off the edit; a Discord or guest track keeps only the parts where someone talks\n• Notes like \"remove the SFX\", \"stop using so many SFX\", \"remove the first hello, keep the second one\" and \"move the facecam\" now work\n• Every edit passes a quality check before it's marked ready\n\nFixed\n• Typing in Creative Direction no longer jumps to the project name\n• A note Solis can't understand no longer blocks the others; it's marked \"Needs clarification\" with the reason",
-  "pub_date": "2026-10-09T19:57:28.235Z",
+  "version": "0.13.0",
+  "notes": "New\n• This is a Beta editing-quality test\n• Rebuilt Competition Intro editing\n• More aggressive dead-space cutting\n• Improved repeated-take and stutter detection\n• New full-facecam and zoom behavior\n• Editable Competition Intro captions\n• Smarter semantic SFX\n• Improved music timing and mixing\n• Better project deletion and UI fixes\n\nTesting\n• Competition Intro editing is still being tuned\n• Zooms, captions, SFX and music need real-world feedback\n• Please use Send Feedback if something looks or sounds wrong",
+  "pub_date": "2026-10-09T21:43:16.613Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkNoOVk2ekxHRW1hb3lVSFlMSjBHMmk2WTd5QVJkSktWd2Izd1I1bGw1Q0I5ZnZpNitYbDRLaDdVZ2RIbktjdTV1Y1NSWTU5VUNOb2ZycXZZenB6NXdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTc1Mzk3CWZpbGU6U29saXMgRWRpdF8wLjEyLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTIuMAphMWNZZll2MzFoMENId1N5UjJNOW4zTGFKazY5R2xENVVJVjViQ3FsRzlkNmNkakd5ZFhLcXZOM2hGYjUrWVd1R1doRmk5TnExS2hiWmFpNnliVzdEQT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.12.0/Solis_0.12.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkNQd2hLWk83eFB2dndibmFMTG5CZUQ4amdGU01RRkw3WmUvbEZXYzUyb3dwZWs4RmxncUk1YXpPYlpCZ0FGRVJRSlh6R0VSaXZEQWtvZ0toZitSV2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTgyMDQ5CWZpbGU6U29saXMgRWRpdF8wLjEzLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTMuMApPWS80eFNSdmRYcngxeE9sQi9NbFg5SkxhWWcrSWF5bmg4aHNoWGpmN2pLbUUwQVI2WlhVTzVmaEdEU284czZ6Tm5Td2EyTUdyYk1XOUdOVmgrdzZEdz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.13.0/Solis_0.13.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,33 +14,30 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "Cut Video: removes dead space, stutters and repeated takes, cleans up empty audio tracks, and gives you a clean base cut",
-        "Fully Edit Video: the full creator edit; after Cut Video it builds on your cut instead of starting over",
-        "Apply Changes: one clear button applies all your notes in Premiere, with Auto-apply on by default",
-        "Delete Project: removes the Solis project; your original videos and Premiere project are never deleted",
-        "Premiere is saved automatically after a verified Solis edit or revision (Settings › Premiere)"
+        "This is a Beta editing-quality test",
+        "Rebuilt Competition Intro editing",
+        "More aggressive dead-space cutting",
+        "Improved repeated-take and stutter detection",
+        "New full-facecam and zoom behavior",
+        "Editable Competition Intro captions",
+        "Smarter semantic SFX",
+        "Improved music timing and mixing",
+        "Better project deletion and UI fixes"
       ],
-      "improved": [
-        "Much less dead space: Solis now listens to the voice tracks only, so game audio no longer hides the pauses between sentences",
-        "False starts are removed: \"hello\" … \"hello everybody, welcome back\" keeps the clean second take (the same word 10+ seconds later is left alone)",
-        "Stutters like \"I-I-I think\" or \"gonna gonna\" are cleaned up; no cuts through words",
-        "Sound effects only where something happens (an image pop, a reveal, a bleep); normal cuts get none",
-        "Music is now clearly audible under your voice",
-        "Empty audio tracks are left off the edit; a Discord or guest track keeps only the parts where someone talks",
-        "Notes like \"remove the SFX\", \"stop using so many SFX\", \"remove the first hello, keep the second one\" and \"move the facecam\" now work",
-        "Every edit passes a quality check before it's marked ready"
+      "improved": [],
+      "fixed": [],
+      "testing": [
+        "Competition Intro editing is still being tuned",
+        "Zooms, captions, SFX and music need real-world feedback",
+        "Please use Send Feedback if something looks or sounds wrong"
       ],
-      "fixed": [
-        "Typing in Creative Direction no longer jumps to the project name",
-        "A note Solis can't understand no longer blocks the others; it's marked \"Needs clarification\" with the reason"
-      ],
-      "version": "0.12.0"
+      "version": "0.13.0"
     },
-    "companionVersion": "0.12.0",
-    "bridgeVersion": "0.12.0",
+    "companionVersion": "0.13.0",
+    "bridgeVersion": "0.13.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "c3abd94c2a300b71052f9c6ed023c6c90e30e7fbb73b40d92cc1bf921fbb2fd7",
+    "sha256": "397c4bdbb9206ad665eaa8221d8b2c55af6961af3cb77c70ba61494cb279dd96",
     "releaseDate": "2026-10-09",
     "publishedBy": "junior"
   }

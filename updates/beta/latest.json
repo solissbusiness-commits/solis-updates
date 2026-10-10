@@ -1,11 +1,11 @@
 {
-  "version": "0.14.0",
-  "notes": "New\n• Style Inspiration: give Solis a video to edit like (upload it, or paste a YouTube link). It studies the pacing, cuts, zooms, sound effects, music and transitions, shows what it learned, and edits your\n• Competition Intro now edits from a reference grammar learned from your own edit: every sound, zoom and music choice has a reason you can read\n• Revisions use your Premiere playhead: \"remove that sound effect\", \"remove this zoom\" and \"make this full facecam\" target what you're looking at\n• \"Change the music\" (or \"use a scarier song\") swaps the track for that section\n\nFixed\n• \"Remove that sound effect\" removed every sound effect; now it removes one, and only \"remove all sound effects\" removes them all\n• Music volume requests (\"music is too loud\", \"I can't hear the music\", \"lower all music\") are understood, and only the music where you are changes unless you say \"all\"\n• The same sound effect (like the sliding sound) no longer repeats back to back; sounds only play on real moments, and fewer sounds are used\n• Revisions no longer change clips, zooms and sounds you didn't ask about, and a revision is only marked applied when Premiere shows the change\n• Pauses kept as \"reactions\" with nothing happening in them are now cut\n• Captions on the timeline: the Premiere template path was wrong, so captions fell back to a file\n\nTesting\n• Competition Intro quality is being tuned against your own reference edit; tell us with Send Feedback what looks or sounds wrong\n• YouTube links give a partial style match; upload the video for the full one",
-  "pub_date": "2026-10-10T05:49:39.968Z",
+  "version": "0.15.0",
+  "notes": "New\n• Revisions understand normal talk: \"make the rivals logo smaller and lower\", \"rivals image too big\", \"music too loud\", \"this goes away too fast\", \"the zoom is too strong\", even \"move dis down\" or \"make\n• One note can ask for several changes: \"make that logo smaller, lower it and keep it on screen another second\"\n• Solis uses what you're looking at: the clip you selected in Premiere first, then what's under the playhead, then names like \"rivals\"\n• While a revision applies, Solis shows what it will do (\"Solis will: • Make the Rivals logo smaller • Move it lower\")\n• Images can be made bigger, smaller, moved and kept on screen longer; one sound can be made quieter or louder; the corner facecam can be resized and moved; a zoom can be made subtler or stronger\n\nFixed\n• \"Solis couldn't tell what to change\": Solis now only asks when two things really match, and says which (\"I found 2 Rivals images: … Which one?\")\n• Competition Intro cuts all dead space: no held reactions or silences unless your Creative Direction asks for them (\"hold his reaction for one second\")\n• Sound effects play only their sound: silence at the start and end of a file is trimmed, and a sound sheet with several hits plays one\n• Each sound's hit lands on its moment (the peak is lined up with the cut, zoom or image)\n• No more sliding sounds on zooms or cuts: a slide is only used when something actually slides, at most once\n• Overlapping sounds no longer cut each other off\n• A revision is checked against Premiere: the changed item is read back, and nothing else may change\n\nTesting\n• Try revisions the way you'd say them to an editor and tell us with Send Feedback when Solis gets one wrong",
+  "pub_date": "2026-10-10T07:06:53.654Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk1uZ1pxaW5GM0h3ODFhWWZiMCt0QkNkTHpsaEFXSHlOMnNjMWpockVIVXZtTHdJcGFHbENPaEFIdWF5NkNrT09qemlINkpYeTR6YTA1YWRJb0NKYWc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjEwMzA2CWZpbGU6U29saXMgRWRpdF8wLjE0LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTQuMApDeTI5M0U4WnZzU1h4S0JnQVlnVkdxYWRWQkxNby80MVhmWDRMaEJsdGk5SlNibktNY24ySGlRT1VFb2RDVWEwNkZTK1FUUnh6NVc4RXdNbC9GUktCZz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.14.0/Solis_0.14.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkdZVzB6c3VEdTZmQzBCdDFlRzhZWVVWeDIyNGpsYm1EQ3RZYWF4SUFjSXUvWUVLMzhqOStVZFlsQ045YURkQWtWcHFtK1l3QkRVTEdVYlBaeFdJS3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjE1MjgzCWZpbGU6U29saXMgRWRpdF8wLjE1LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTUuMApWbk9vRjF2R011MUpyd2cyaGtlRnhadGo0K3htL2lFMTFRa0QrVGJBL0EycS8vd05UZWxSdktzTW1pL0MyVHh1Qkg0TE5ZanpHcEFNY2Q3ak5LbnFDUT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.15.0/Solis_0.15.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,31 +14,32 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "Style Inspiration: give Solis a video to edit like (upload it, or paste a YouTube link). It studies the pacing, cuts, zooms, sound effects, music and transitions, shows what it learned, and edits your",
-        "Competition Intro now edits from a reference grammar learned from your own edit: every sound, zoom and music choice has a reason you can read",
-        "Revisions use your Premiere playhead: \"remove that sound effect\", \"remove this zoom\" and \"make this full facecam\" target what you're looking at",
-        "\"Change the music\" (or \"use a scarier song\") swaps the track for that section"
+        "Revisions understand normal talk: \"make the rivals logo smaller and lower\", \"rivals image too big\", \"music too loud\", \"this goes away too fast\", \"the zoom is too strong\", even \"move dis down\" or \"make",
+        "One note can ask for several changes: \"make that logo smaller, lower it and keep it on screen another second\"",
+        "Solis uses what you're looking at: the clip you selected in Premiere first, then what's under the playhead, then names like \"rivals\"",
+        "While a revision applies, Solis shows what it will do (\"Solis will: • Make the Rivals logo smaller • Move it lower\")",
+        "Images can be made bigger, smaller, moved and kept on screen longer; one sound can be made quieter or louder; the corner facecam can be resized and moved; a zoom can be made subtler or stronger"
       ],
       "improved": [],
       "fixed": [
-        "\"Remove that sound effect\" removed every sound effect; now it removes one, and only \"remove all sound effects\" removes them all",
-        "Music volume requests (\"music is too loud\", \"I can't hear the music\", \"lower all music\") are understood, and only the music where you are changes unless you say \"all\"",
-        "The same sound effect (like the sliding sound) no longer repeats back to back; sounds only play on real moments, and fewer sounds are used",
-        "Revisions no longer change clips, zooms and sounds you didn't ask about, and a revision is only marked applied when Premiere shows the change",
-        "Pauses kept as \"reactions\" with nothing happening in them are now cut",
-        "Captions on the timeline: the Premiere template path was wrong, so captions fell back to a file"
+        "\"Solis couldn't tell what to change\": Solis now only asks when two things really match, and says which (\"I found 2 Rivals images: … Which one?\")",
+        "Competition Intro cuts all dead space: no held reactions or silences unless your Creative Direction asks for them (\"hold his reaction for one second\")",
+        "Sound effects play only their sound: silence at the start and end of a file is trimmed, and a sound sheet with several hits plays one",
+        "Each sound's hit lands on its moment (the peak is lined up with the cut, zoom or image)",
+        "No more sliding sounds on zooms or cuts: a slide is only used when something actually slides, at most once",
+        "Overlapping sounds no longer cut each other off",
+        "A revision is checked against Premiere: the changed item is read back, and nothing else may change"
       ],
       "testing": [
-        "Competition Intro quality is being tuned against your own reference edit; tell us with Send Feedback what looks or sounds wrong",
-        "YouTube links give a partial style match; upload the video for the full one"
+        "Try revisions the way you'd say them to an editor and tell us with Send Feedback when Solis gets one wrong"
       ],
-      "version": "0.14.0"
+      "version": "0.15.0"
     },
-    "companionVersion": "0.14.0",
-    "bridgeVersion": "0.14.0",
+    "companionVersion": "0.15.0",
+    "bridgeVersion": "0.15.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "4331a4d3c07509e50ac2fc69dec06c87e091d663d11e6a5e5b951f3a7fec51ab",
+    "sha256": "4624ef02ee64f0db36778b5837370742f1e17cb6e26b6b649ba60c20cbe76c51",
     "releaseDate": "2026-10-10",
     "publishedBy": "junior"
   }

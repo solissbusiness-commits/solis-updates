@@ -1,11 +1,11 @@
 {
-  "version": "0.13.1",
-  "notes": "New\n• Competition Intro cuts now match the creator's own edit: every take is transcribed on its own, so false starts are removed, and every pause between lines is cut\n• Your real Zoom Out (from 200%) preset on the hook: a Transform effect with motion blur, not a custom zoom\n• Captions placed on the timeline as editable text, popping in like Quick Bounce (falls back to a captions file if Premiere can't place them)\n• Labels on the timeline wherever you need to add something: \"b-roll here\", \"image here\", \"pop up …\" and \"transition here\" (Competition Intro and Long Form); drop your own image or clip in\n• Sounds learned from your editing: a slide on the hook zoom, a hit leading each big zoom, a pop for pop-ups, risers into b-roll and the cliffhanger, a comedic hit on the payoff\n\nFixed\n• Music was silent or too broken up: Competition Intros now get one continuous music bed, and Solis checks the level Premiere really set\n• No more random bass drops\n• Pauses were kept whenever your face moved; they're cut now\n• Solis no longer picks or searches for images; it marks the spot and you drop the image in\n\nTesting\n• Captions and the Zoom Out preset are new in Premiere; tell us with Send Feedback if they don't appear\n• Transitions (Premiere Composer Pan, Shake & Distort) are not added yet",
-  "pub_date": "2026-10-10T01:12:52.134Z",
+  "version": "0.14.0",
+  "notes": "New\n• Style Inspiration: give Solis a video to edit like (upload it, or paste a YouTube link). It studies the pacing, cuts, zooms, sound effects, music and transitions, shows what it learned, and edits your\n• Competition Intro now edits from a reference grammar learned from your own edit: every sound, zoom and music choice has a reason you can read\n• Revisions use your Premiere playhead: \"remove that sound effect\", \"remove this zoom\" and \"make this full facecam\" target what you're looking at\n• \"Change the music\" (or \"use a scarier song\") swaps the track for that section\n\nFixed\n• \"Remove that sound effect\" removed every sound effect; now it removes one, and only \"remove all sound effects\" removes them all\n• Music volume requests (\"music is too loud\", \"I can't hear the music\", \"lower all music\") are understood, and only the music where you are changes unless you say \"all\"\n• The same sound effect (like the sliding sound) no longer repeats back to back; sounds only play on real moments, and fewer sounds are used\n• Revisions no longer change clips, zooms and sounds you didn't ask about, and a revision is only marked applied when Premiere shows the change\n• Pauses kept as \"reactions\" with nothing happening in them are now cut\n• Captions on the timeline: the Premiere template path was wrong, so captions fell back to a file\n\nTesting\n• Competition Intro quality is being tuned against your own reference edit; tell us with Send Feedback what looks or sounds wrong\n• YouTube links give a partial style match; upload the video for the full one",
+  "pub_date": "2026-10-10T05:49:39.968Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkhrdHkwNXFCTURJNXAzUGMra21FNEFwUGN4VjYxZFRUdm1lakJvQXVIZStQcUFBVGowU1J1L293YURlTUYwNmZRRUVXUVl0NENvWHRnQlI4ODVQR1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTkzNDA5CWZpbGU6U29saXMgRWRpdF8wLjEzLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTMuMQo3M3poZ25lMEZhaUl2WkxkQzU4anRwNElLZFFjL0dXckY4ejNEdlFwSVl2WWFmVnRwMUYwbDJLaHVZYWM2U1BVR3p5ZGFPSnVVYWxSYkd2ZThQR2hCUT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.13.1/Solis_0.13.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk1uZ1pxaW5GM0h3ODFhWWZiMCt0QkNkTHpsaEFXSHlOMnNjMWpockVIVXZtTHdJcGFHbENPaEFIdWF5NkNrT09qemlINkpYeTR6YTA1YWRJb0NKYWc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjEwMzA2CWZpbGU6U29saXMgRWRpdF8wLjE0LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTQuMApDeTI5M0U4WnZzU1h4S0JnQVlnVkdxYWRWQkxNby80MVhmWDRMaEJsdGk5SlNibktNY24ySGlRT1VFb2RDVWEwNkZTK1FUUnh6NVc4RXdNbC9GUktCZz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.14.0/Solis_0.14.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,30 +14,31 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "Competition Intro cuts now match the creator's own edit: every take is transcribed on its own, so false starts are removed, and every pause between lines is cut",
-        "Your real Zoom Out (from 200%) preset on the hook: a Transform effect with motion blur, not a custom zoom",
-        "Captions placed on the timeline as editable text, popping in like Quick Bounce (falls back to a captions file if Premiere can't place them)",
-        "Labels on the timeline wherever you need to add something: \"b-roll here\", \"image here\", \"pop up …\" and \"transition here\" (Competition Intro and Long Form); drop your own image or clip in",
-        "Sounds learned from your editing: a slide on the hook zoom, a hit leading each big zoom, a pop for pop-ups, risers into b-roll and the cliffhanger, a comedic hit on the payoff"
+        "Style Inspiration: give Solis a video to edit like (upload it, or paste a YouTube link). It studies the pacing, cuts, zooms, sound effects, music and transitions, shows what it learned, and edits your",
+        "Competition Intro now edits from a reference grammar learned from your own edit: every sound, zoom and music choice has a reason you can read",
+        "Revisions use your Premiere playhead: \"remove that sound effect\", \"remove this zoom\" and \"make this full facecam\" target what you're looking at",
+        "\"Change the music\" (or \"use a scarier song\") swaps the track for that section"
       ],
       "improved": [],
       "fixed": [
-        "Music was silent or too broken up: Competition Intros now get one continuous music bed, and Solis checks the level Premiere really set",
-        "No more random bass drops",
-        "Pauses were kept whenever your face moved; they're cut now",
-        "Solis no longer picks or searches for images; it marks the spot and you drop the image in"
+        "\"Remove that sound effect\" removed every sound effect; now it removes one, and only \"remove all sound effects\" removes them all",
+        "Music volume requests (\"music is too loud\", \"I can't hear the music\", \"lower all music\") are understood, and only the music where you are changes unless you say \"all\"",
+        "The same sound effect (like the sliding sound) no longer repeats back to back; sounds only play on real moments, and fewer sounds are used",
+        "Revisions no longer change clips, zooms and sounds you didn't ask about, and a revision is only marked applied when Premiere shows the change",
+        "Pauses kept as \"reactions\" with nothing happening in them are now cut",
+        "Captions on the timeline: the Premiere template path was wrong, so captions fell back to a file"
       ],
       "testing": [
-        "Captions and the Zoom Out preset are new in Premiere; tell us with Send Feedback if they don't appear",
-        "Transitions (Premiere Composer Pan, Shake & Distort) are not added yet"
+        "Competition Intro quality is being tuned against your own reference edit; tell us with Send Feedback what looks or sounds wrong",
+        "YouTube links give a partial style match; upload the video for the full one"
       ],
-      "version": "0.13.1"
+      "version": "0.14.0"
     },
-    "companionVersion": "0.13.1",
-    "bridgeVersion": "0.13.1",
+    "companionVersion": "0.14.0",
+    "bridgeVersion": "0.14.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "5bf6cac4f0aca3e81e17231e3d03bd6da8f33d5923cb6c21028c0eee859f9462",
+    "sha256": "4331a4d3c07509e50ac2fc69dec06c87e091d663d11e6a5e5b951f3a7fec51ab",
     "releaseDate": "2026-10-10",
     "publishedBy": "junior"
   }

@@ -1,11 +1,11 @@
 {
-  "version": "0.13.0",
-  "notes": "New\n• This is a Beta editing-quality test\n• Rebuilt Competition Intro editing\n• More aggressive dead-space cutting\n• Improved repeated-take and stutter detection\n• New full-facecam and zoom behavior\n• Editable Competition Intro captions\n• Smarter semantic SFX\n• Improved music timing and mixing\n• Better project deletion and UI fixes\n\nTesting\n• Competition Intro editing is still being tuned\n• Zooms, captions, SFX and music need real-world feedback\n• Please use Send Feedback if something looks or sounds wrong",
-  "pub_date": "2026-10-09T21:43:16.613Z",
+  "version": "0.13.1",
+  "notes": "New\n• Competition Intro cuts now match the creator's own edit: every take is transcribed on its own, so false starts are removed, and every pause between lines is cut\n• Your real Zoom Out (from 200%) preset on the hook: a Transform effect with motion blur, not a custom zoom\n• Captions placed on the timeline as editable text, popping in like Quick Bounce (falls back to a captions file if Premiere can't place them)\n• Labels on the timeline wherever you need to add something: \"b-roll here\", \"image here\", \"pop up …\" and \"transition here\" (Competition Intro and Long Form); drop your own image or clip in\n• Sounds learned from your editing: a slide on the hook zoom, a hit leading each big zoom, a pop for pop-ups, risers into b-roll and the cliffhanger, a comedic hit on the payoff\n\nFixed\n• Music was silent or too broken up: Competition Intros now get one continuous music bed, and Solis checks the level Premiere really set\n• No more random bass drops\n• Pauses were kept whenever your face moved; they're cut now\n• Solis no longer picks or searches for images; it marks the spot and you drop the image in\n\nTesting\n• Captions and the Zoom Out preset are new in Premiere; tell us with Send Feedback if they don't appear\n• Transitions (Premiere Composer Pan, Shake & Distort) are not added yet",
+  "pub_date": "2026-10-10T01:12:52.134Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkNQd2hLWk83eFB2dndibmFMTG5CZUQ4amdGU01RRkw3WmUvbEZXYzUyb3dwZWs4RmxncUk1YXpPYlpCZ0FGRVJRSlh6R0VSaXZEQWtvZ0toZitSV2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTgyMDQ5CWZpbGU6U29saXMgRWRpdF8wLjEzLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTMuMApPWS80eFNSdmRYcngxeE9sQi9NbFg5SkxhWWcrSWF5bmg4aHNoWGpmN2pLbUUwQVI2WlhVTzVmaEdEU284czZ6Tm5Td2EyTUdyYk1XOUdOVmgrdzZEdz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.13.0/Solis_0.13.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkhrdHkwNXFCTURJNXAzUGMra21FNEFwUGN4VjYxZFRUdm1lakJvQXVIZStQcUFBVGowU1J1L293YURlTUYwNmZRRUVXUVl0NENvWHRnQlI4ODVQR1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNTkzNDA5CWZpbGU6U29saXMgRWRpdF8wLjEzLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTMuMQo3M3poZ25lMEZhaUl2WkxkQzU4anRwNElLZFFjL0dXckY4ejNEdlFwSVl2WWFmVnRwMUYwbDJLaHVZYWM2U1BVR3p5ZGFPSnVVYWxSYkd2ZThQR2hCUT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.13.1/Solis_0.13.1_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,31 +14,31 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "This is a Beta editing-quality test",
-        "Rebuilt Competition Intro editing",
-        "More aggressive dead-space cutting",
-        "Improved repeated-take and stutter detection",
-        "New full-facecam and zoom behavior",
-        "Editable Competition Intro captions",
-        "Smarter semantic SFX",
-        "Improved music timing and mixing",
-        "Better project deletion and UI fixes"
+        "Competition Intro cuts now match the creator's own edit: every take is transcribed on its own, so false starts are removed, and every pause between lines is cut",
+        "Your real Zoom Out (from 200%) preset on the hook: a Transform effect with motion blur, not a custom zoom",
+        "Captions placed on the timeline as editable text, popping in like Quick Bounce (falls back to a captions file if Premiere can't place them)",
+        "Labels on the timeline wherever you need to add something: \"b-roll here\", \"image here\", \"pop up …\" and \"transition here\" (Competition Intro and Long Form); drop your own image or clip in",
+        "Sounds learned from your editing: a slide on the hook zoom, a hit leading each big zoom, a pop for pop-ups, risers into b-roll and the cliffhanger, a comedic hit on the payoff"
       ],
       "improved": [],
-      "fixed": [],
-      "testing": [
-        "Competition Intro editing is still being tuned",
-        "Zooms, captions, SFX and music need real-world feedback",
-        "Please use Send Feedback if something looks or sounds wrong"
+      "fixed": [
+        "Music was silent or too broken up: Competition Intros now get one continuous music bed, and Solis checks the level Premiere really set",
+        "No more random bass drops",
+        "Pauses were kept whenever your face moved; they're cut now",
+        "Solis no longer picks or searches for images; it marks the spot and you drop the image in"
       ],
-      "version": "0.13.0"
+      "testing": [
+        "Captions and the Zoom Out preset are new in Premiere; tell us with Send Feedback if they don't appear",
+        "Transitions (Premiere Composer Pan, Shake & Distort) are not added yet"
+      ],
+      "version": "0.13.1"
     },
-    "companionVersion": "0.13.0",
-    "bridgeVersion": "0.13.0",
+    "companionVersion": "0.13.1",
+    "bridgeVersion": "0.13.1",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "397c4bdbb9206ad665eaa8221d8b2c55af6961af3cb77c70ba61494cb279dd96",
-    "releaseDate": "2026-10-09",
+    "sha256": "5bf6cac4f0aca3e81e17231e3d03bd6da8f33d5923cb6c21028c0eee859f9462",
+    "releaseDate": "2026-10-10",
     "publishedBy": "junior"
   }
 }

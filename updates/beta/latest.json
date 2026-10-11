@@ -1,11 +1,11 @@
 {
-  "version": "0.15.0",
-  "notes": "New\n• Revisions understand normal talk: \"make the rivals logo smaller and lower\", \"rivals image too big\", \"music too loud\", \"this goes away too fast\", \"the zoom is too strong\", even \"move dis down\" or \"make\n• One note can ask for several changes: \"make that logo smaller, lower it and keep it on screen another second\"\n• Solis uses what you're looking at: the clip you selected in Premiere first, then what's under the playhead, then names like \"rivals\"\n• While a revision applies, Solis shows what it will do (\"Solis will: • Make the Rivals logo smaller • Move it lower\")\n• Images can be made bigger, smaller, moved and kept on screen longer; one sound can be made quieter or louder; the corner facecam can be resized and moved; a zoom can be made subtler or stronger\n\nFixed\n• \"Solis couldn't tell what to change\": Solis now only asks when two things really match, and says which (\"I found 2 Rivals images: … Which one?\")\n• Competition Intro cuts all dead space: no held reactions or silences unless your Creative Direction asks for them (\"hold his reaction for one second\")\n• Sound effects play only their sound: silence at the start and end of a file is trimmed, and a sound sheet with several hits plays one\n• Each sound's hit lands on its moment (the peak is lined up with the cut, zoom or image)\n• No more sliding sounds on zooms or cuts: a slide is only used when something actually slides, at most once\n• Overlapping sounds no longer cut each other off\n• A revision is checked against Premiere: the changed item is read back, and nothing else may change\n\nTesting\n• Try revisions the way you'd say them to an editor and tell us with Send Feedback when Solis gets one wrong",
-  "pub_date": "2026-10-10T07:06:53.654Z",
+  "version": "0.16.0",
+  "notes": "New\n• A redesigned Solis: solid graphite surfaces, stronger text contrast, one orange primary action per screen, and no glow or glass effects\n• References: paste a YouTube link and it turns into a card with the real thumbnail, title and channel. Upload a video and watch Solis study it step by step\n• A Reference Library page to save references and reuse them in any project\n• New Project asks for everything in one sheet: name, footage, Cut Video or Fully Edit Video, video type, creator style, references and creative direction\n• Projects is now a library of video frames, with list view one click away\n• Opening a project grows the card into the workspace\n• The project workspace: an edit map with every cut, zoom, sound, image and music change, an event list, and an inspector that shows why each change happened\n• Revisions read like editing notes: Solis shows what it understood while you type, then applies it\n• Progress HUD: a small window at the top right of your screen shows an edit's progress, current step and time left while you work in Premiere or other apps. Hide it any time; the edit keeps running\n• Settings grouped into General, Editing, Premiere, References, Updates and Account\n\nFixed\n• Focus returns to the right place after closing dialogs opened from a menu\n• Sign-in, Learn, Feedback, Assets and Presets copy rewritten to say what things do\n\nTesting\n• Try the HUD during a full edit: dragging it, hiding it, and clicking it to open the project",
+  "pub_date": "2026-10-11T05:27:35.497Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkdZVzB6c3VEdTZmQzBCdDFlRzhZWVVWeDIyNGpsYm1EQ3RZYWF4SUFjSXUvWUVLMzhqOStVZFlsQ045YURkQWtWcHFtK1l3QkRVTEdVYlBaeFdJS3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjE1MjgzCWZpbGU6U29saXMgRWRpdF8wLjE1LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTUuMApWbk9vRjF2R011MUpyd2cyaGtlRnhadGo0K3htL2lFMTFRa0QrVGJBL0EycS8vd05UZWxSdktzTW1pL0MyVHh1Qkg0TE5ZanpHcEFNY2Q3ak5LbnFDUT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.15.0/Solis_0.15.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QksxTlEwZEExeGkwNWIveEh1N1p2MVV6TDgyK1BHQlRvcE1Ia0t4V1NVMHZWcEFUTXBpQWhOcU9NNnZmWFZ6OFRrWW9ab0JJUzhCUW8zaGdxSGp0Nmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjkyNTE5CWZpbGU6U29saXMgRWRpdF8wLjE2LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTYuMApmV3VTaE9PcmplSkxoc0RWa0VFcG43MFJyaTBQT2VwSmJrL2t0UTcyYmZEaFM2cngrSTJUN3BHeXJ4U3RRazB2L2xRV2I4QTRid0M2UUJIU2xZbm5CZz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.16.0/Solis_0.16.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,33 +14,33 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "Revisions understand normal talk: \"make the rivals logo smaller and lower\", \"rivals image too big\", \"music too loud\", \"this goes away too fast\", \"the zoom is too strong\", even \"move dis down\" or \"make",
-        "One note can ask for several changes: \"make that logo smaller, lower it and keep it on screen another second\"",
-        "Solis uses what you're looking at: the clip you selected in Premiere first, then what's under the playhead, then names like \"rivals\"",
-        "While a revision applies, Solis shows what it will do (\"Solis will: • Make the Rivals logo smaller • Move it lower\")",
-        "Images can be made bigger, smaller, moved and kept on screen longer; one sound can be made quieter or louder; the corner facecam can be resized and moved; a zoom can be made subtler or stronger"
+        "A redesigned Solis: solid graphite surfaces, stronger text contrast, one orange primary action per screen, and no glow or glass effects",
+        "References: paste a YouTube link and it turns into a card with the real thumbnail, title and channel. Upload a video and watch Solis study it step by step",
+        "A Reference Library page to save references and reuse them in any project",
+        "New Project asks for everything in one sheet: name, footage, Cut Video or Fully Edit Video, video type, creator style, references and creative direction",
+        "Projects is now a library of video frames, with list view one click away",
+        "Opening a project grows the card into the workspace",
+        "The project workspace: an edit map with every cut, zoom, sound, image and music change, an event list, and an inspector that shows why each change happened",
+        "Revisions read like editing notes: Solis shows what it understood while you type, then applies it",
+        "Progress HUD: a small window at the top right of your screen shows an edit's progress, current step and time left while you work in Premiere or other apps. Hide it any time; the edit keeps running",
+        "Settings grouped into General, Editing, Premiere, References, Updates and Account"
       ],
       "improved": [],
       "fixed": [
-        "\"Solis couldn't tell what to change\": Solis now only asks when two things really match, and says which (\"I found 2 Rivals images: … Which one?\")",
-        "Competition Intro cuts all dead space: no held reactions or silences unless your Creative Direction asks for them (\"hold his reaction for one second\")",
-        "Sound effects play only their sound: silence at the start and end of a file is trimmed, and a sound sheet with several hits plays one",
-        "Each sound's hit lands on its moment (the peak is lined up with the cut, zoom or image)",
-        "No more sliding sounds on zooms or cuts: a slide is only used when something actually slides, at most once",
-        "Overlapping sounds no longer cut each other off",
-        "A revision is checked against Premiere: the changed item is read back, and nothing else may change"
+        "Focus returns to the right place after closing dialogs opened from a menu",
+        "Sign-in, Learn, Feedback, Assets and Presets copy rewritten to say what things do"
       ],
       "testing": [
-        "Try revisions the way you'd say them to an editor and tell us with Send Feedback when Solis gets one wrong"
+        "Try the HUD during a full edit: dragging it, hiding it, and clicking it to open the project"
       ],
-      "version": "0.15.0"
+      "version": "0.16.0"
     },
-    "companionVersion": "0.15.0",
-    "bridgeVersion": "0.15.0",
+    "companionVersion": "0.16.0",
+    "bridgeVersion": "0.16.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "4624ef02ee64f0db36778b5837370742f1e17cb6e26b6b649ba60c20cbe76c51",
-    "releaseDate": "2026-10-10",
+    "sha256": "1f8b080411182598a4b0ab123cb0e5d901176734d6a207d064ea29264197bc9d",
+    "releaseDate": "2026-10-11",
     "publishedBy": "junior"
   }
 }

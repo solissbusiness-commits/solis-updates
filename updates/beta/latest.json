@@ -1,11 +1,11 @@
 {
-  "version": "0.16.0",
-  "notes": "New\n• A redesigned Solis: solid graphite surfaces, stronger text contrast, one orange primary action per screen, and no glow or glass effects\n• References: paste a YouTube link and it turns into a card with the real thumbnail, title and channel. Upload a video and watch Solis study it step by step\n• A Reference Library page to save references and reuse them in any project\n• New Project asks for everything in one sheet: name, footage, Cut Video or Fully Edit Video, video type, creator style, references and creative direction\n• Projects is now a library of video frames, with list view one click away\n• Opening a project grows the card into the workspace\n• The project workspace: an edit map with every cut, zoom, sound, image and music change, an event list, and an inspector that shows why each change happened\n• Revisions read like editing notes: Solis shows what it understood while you type, then applies it\n• Progress HUD: a small window at the top right of your screen shows an edit's progress, current step and time left while you work in Premiere or other apps. Hide it any time; the edit keeps running\n• Settings grouped into General, Editing, Premiere, References, Updates and Account\n\nFixed\n• Focus returns to the right place after closing dialogs opened from a menu\n• Sign-in, Learn, Feedback, Assets and Presets copy rewritten to say what things do\n\nTesting\n• Try the HUD during a full edit: dragging it, hiding it, and clicking it to open the project",
-  "pub_date": "2026-10-11T05:27:35.497Z",
+  "version": "0.17.0",
+  "notes": "New\n• Home: continue your latest project, see Premiere at a glance, start a Cut Video or Fully Edit Video project in one line, and find recent projects, references and creator styles\n• Search in the top bar finds projects, references, assets, presets and commands (Ctrl P)\n• Your profile in the top right: change your display name and photo, see your plan, and sign out\n• Projects can be renamed and duplicated (same footage and settings, no edits copied)\n• References: \"Use as Inspiration\" starts a new project with that style, and a YouTube link that can't load offers Retry or Upload Video Instead\n• Presets shows creator styles and styles learned from your references, with what each one does\n\nFixed\n• Revisions now always edit Premiere once an edit exists. They were being saved as notes whenever Premiere's timeline didn't match Solis exactly\n• A revision that fails stays a revision, marked Failed with the reason and a Retry button\n• Repeated words, stutters and false starts are cut: Solis now transcribes speech word for word (it used to receive a cleaned-up transcript that hid them) and repairs word timings so they can be found\n• Captions no longer show \"uh\" and \"um\"\n\nTesting\n• Try a revision such as \"cut the first hello\" and check it changes the Premiere timeline\n• Check that false starts in a new edit are removed",
+  "pub_date": "2026-10-11T09:00:50.575Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QksxTlEwZEExeGkwNWIveEh1N1p2MVV6TDgyK1BHQlRvcE1Ia0t4V1NVMHZWcEFUTXBpQWhOcU9NNnZmWFZ6OFRrWW9ab0JJUzhCUW8zaGdxSGp0Nmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNjkyNTE5CWZpbGU6U29saXMgRWRpdF8wLjE2LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTYuMApmV3VTaE9PcmplSkxoc0RWa0VFcG43MFJyaTBQT2VwSmJrL2t0UTcyYmZEaFM2cngrSTJUN3BHeXJ4U3RRazB2L2xRV2I4QTRid0M2UUJIU2xZbm5CZz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.16.0/Solis_0.16.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk9TMU05cXg5QU9VaWU4YkZnbE51Mlg1NjJvMXFmbFpZQ2lNcDRUeW40ZHFUYm9mbU40OWVnalpKbzE2RzJOWE1uQTRaN3dBUnYzUmU4OUw5VzErRFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzA5MjE2CWZpbGU6U29saXMgRWRpdF8wLjE3LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTcuMApPT3VYcXEvOFdtUSswSU42Y3hyNkVaNkVpRHpRb3djTHhJT2x5VEUxZXFVYzlKelVaaXVJdlVsL29sS0hhbTl4NW03dGREVGJDZGRpUlovODVpZk5EZz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.17.0/Solis_0.17.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,32 +14,31 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "A redesigned Solis: solid graphite surfaces, stronger text contrast, one orange primary action per screen, and no glow or glass effects",
-        "References: paste a YouTube link and it turns into a card with the real thumbnail, title and channel. Upload a video and watch Solis study it step by step",
-        "A Reference Library page to save references and reuse them in any project",
-        "New Project asks for everything in one sheet: name, footage, Cut Video or Fully Edit Video, video type, creator style, references and creative direction",
-        "Projects is now a library of video frames, with list view one click away",
-        "Opening a project grows the card into the workspace",
-        "The project workspace: an edit map with every cut, zoom, sound, image and music change, an event list, and an inspector that shows why each change happened",
-        "Revisions read like editing notes: Solis shows what it understood while you type, then applies it",
-        "Progress HUD: a small window at the top right of your screen shows an edit's progress, current step and time left while you work in Premiere or other apps. Hide it any time; the edit keeps running",
-        "Settings grouped into General, Editing, Premiere, References, Updates and Account"
+        "Home: continue your latest project, see Premiere at a glance, start a Cut Video or Fully Edit Video project in one line, and find recent projects, references and creator styles",
+        "Search in the top bar finds projects, references, assets, presets and commands (Ctrl P)",
+        "Your profile in the top right: change your display name and photo, see your plan, and sign out",
+        "Projects can be renamed and duplicated (same footage and settings, no edits copied)",
+        "References: \"Use as Inspiration\" starts a new project with that style, and a YouTube link that can't load offers Retry or Upload Video Instead",
+        "Presets shows creator styles and styles learned from your references, with what each one does"
       ],
       "improved": [],
       "fixed": [
-        "Focus returns to the right place after closing dialogs opened from a menu",
-        "Sign-in, Learn, Feedback, Assets and Presets copy rewritten to say what things do"
+        "Revisions now always edit Premiere once an edit exists. They were being saved as notes whenever Premiere's timeline didn't match Solis exactly",
+        "A revision that fails stays a revision, marked Failed with the reason and a Retry button",
+        "Repeated words, stutters and false starts are cut: Solis now transcribes speech word for word (it used to receive a cleaned-up transcript that hid them) and repairs word timings so they can be found",
+        "Captions no longer show \"uh\" and \"um\""
       ],
       "testing": [
-        "Try the HUD during a full edit: dragging it, hiding it, and clicking it to open the project"
+        "Try a revision such as \"cut the first hello\" and check it changes the Premiere timeline",
+        "Check that false starts in a new edit are removed"
       ],
-      "version": "0.16.0"
+      "version": "0.17.0"
     },
-    "companionVersion": "0.16.0",
-    "bridgeVersion": "0.16.0",
+    "companionVersion": "0.17.0",
+    "bridgeVersion": "0.17.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "1f8b080411182598a4b0ab123cb0e5d901176734d6a207d064ea29264197bc9d",
+    "sha256": "9be83ec7706bc1920122480908e5573be89042f65dfe85c08ce3f71f8ab9e8a5",
     "releaseDate": "2026-10-11",
     "publishedBy": "junior"
   }

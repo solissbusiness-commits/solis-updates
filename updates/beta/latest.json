@@ -1,11 +1,11 @@
 {
-  "version": "0.17.0",
-  "notes": "New\n• Home: continue your latest project, see Premiere at a glance, start a Cut Video or Fully Edit Video project in one line, and find recent projects, references and creator styles\n• Search in the top bar finds projects, references, assets, presets and commands (Ctrl P)\n• Your profile in the top right: change your display name and photo, see your plan, and sign out\n• Projects can be renamed and duplicated (same footage and settings, no edits copied)\n• References: \"Use as Inspiration\" starts a new project with that style, and a YouTube link that can't load offers Retry or Upload Video Instead\n• Presets shows creator styles and styles learned from your references, with what each one does\n\nFixed\n• Revisions now always edit Premiere once an edit exists. They were being saved as notes whenever Premiere's timeline didn't match Solis exactly\n• A revision that fails stays a revision, marked Failed with the reason and a Retry button\n• Repeated words, stutters and false starts are cut: Solis now transcribes speech word for word (it used to receive a cleaned-up transcript that hid them) and repairs word timings so they can be found\n• Captions no longer show \"uh\" and \"um\"\n\nTesting\n• Try a revision such as \"cut the first hello\" and check it changes the Premiere timeline\n• Check that false starts in a new edit are removed",
-  "pub_date": "2026-10-11T09:00:50.575Z",
+  "version": "0.18.0",
+  "notes": "Improved\n• Edits are now built in Premiere as small, checkpointed steps instead of one giant command. The old way re-read the whole timeline for every clip, which froze Premiere on long videos.\n• Solis paces itself: bigger steps when Premiere is fast, smaller steps and longer pauses when it slows down. Only one step is ever in flight.\n• If Premiere or Solis closes mid-edit, your progress is saved. Choose **Resume Edit** to continue where it stopped — nothing already built is rebuilt or duplicated.\n• **Pause** and **Cancel** while Premiere is building (they take effect between steps).\n• Edits of any length fit (previously over ~600 shots couldn't be sent at all). Sources up to 4 hours.\n• Long recordings are transcribed in parts, each saved as it finishes, with a real time estimate.\n• Scene detection is about 3× faster; it runs alongside transcription on machines with spare cores.\n• Solis' helper processes run at lower priority so Premiere always comes first.\n• A dedicated Long Form planner: the video is split into scenes with a purpose (hook, setup, challenge, fail, win, reveal, outro…).\n• Full facecam only for real reactions and talking to the viewer, spaced like your reference. Fewer, purposeful zooms.\n• Sound effects only for real moments (an image appearing, a reveal, a fail, a win). Never on normal cuts, facecam switches or subtle zooms; no repeated sounds.\n• Music per scene with fewer track changes, cut on awkward beats instead of adding a sound.\n• Off-camera lines are removed (\"don't show that\", \"hold on\", figuring out controls). With a Claude key set, Solis can also trim off-camera logistics.\n• Pauses tuned to KAYE's measured long-form cutting. No automatic captions in Long Form.\n• New: \"cut this pause\" and \"use the other take\" (at the Premiere playhead).\n• Learned preferences are now per mode: \"fewer zooms\" on a Long Form edit no longer changes your Competition Intros.",
+  "pub_date": "2026-10-16T06:02:28.850Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk9TMU05cXg5QU9VaWU4YkZnbE51Mlg1NjJvMXFmbFpZQ2lNcDRUeW40ZHFUYm9mbU40OWVnalpKbzE2RzJOWE1uQTRaN3dBUnYzUmU4OUw5VzErRFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxNzA5MjE2CWZpbGU6U29saXMgRWRpdF8wLjE3LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTcuMApPT3VYcXEvOFdtUSswSU42Y3hyNkVaNkVpRHpRb3djTHhJT2x5VEUxZXFVYzlKelVaaXVJdlVsL29sS0hhbTl4NW03dGREVGJDZGRpUlovODVpZk5EZz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.17.0/Solis_0.17.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkE4dnBVdjE0OVFZNUNtNm82QXljeSswTVVzWWJEVHJPaFMzd21Da3JtbzYySi9pNGZBYU5BMDJEaDUwTXp4K1NHTmxEZnBLNWhGbjVYUTAwSjJocEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTMwMjg4CWZpbGU6U29saXMgRWRpdF8wLjE4LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguMAoyYXJqNG1yMGUyVzBkbEs4dXVtSGxhdXlCTHdaaFBsUFkxRFJkdGdqNVJqemNSRkx6a2l3TDZPUXRYczMzUmFVclEzM0FaVEgvOE5BQ0U3Wkh1dklBQT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.0/Solis_0.18.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -13,33 +13,34 @@
     "policy": "NORMAL",
     "minimumSupportedVersion": null,
     "notes": {
-      "new": [
-        "Home: continue your latest project, see Premiere at a glance, start a Cut Video or Fully Edit Video project in one line, and find recent projects, references and creator styles",
-        "Search in the top bar finds projects, references, assets, presets and commands (Ctrl P)",
-        "Your profile in the top right: change your display name and photo, see your plan, and sign out",
-        "Projects can be renamed and duplicated (same footage and settings, no edits copied)",
-        "References: \"Use as Inspiration\" starts a new project with that style, and a YouTube link that can't load offers Retry or Upload Video Instead",
-        "Presets shows creator styles and styles learned from your references, with what each one does"
+      "new": [],
+      "improved": [
+        "Edits are now built in Premiere as small, checkpointed steps instead of one giant command. The old way re-read the whole timeline for every clip, which froze Premiere on long videos.",
+        "Solis paces itself: bigger steps when Premiere is fast, smaller steps and longer pauses when it slows down. Only one step is ever in flight.",
+        "If Premiere or Solis closes mid-edit, your progress is saved. Choose **Resume Edit** to continue where it stopped — nothing already built is rebuilt or duplicated.",
+        "**Pause** and **Cancel** while Premiere is building (they take effect between steps).",
+        "Edits of any length fit (previously over ~600 shots couldn't be sent at all). Sources up to 4 hours.",
+        "Long recordings are transcribed in parts, each saved as it finishes, with a real time estimate.",
+        "Scene detection is about 3× faster; it runs alongside transcription on machines with spare cores.",
+        "Solis' helper processes run at lower priority so Premiere always comes first.",
+        "A dedicated Long Form planner: the video is split into scenes with a purpose (hook, setup, challenge, fail, win, reveal, outro…).",
+        "Full facecam only for real reactions and talking to the viewer, spaced like your reference. Fewer, purposeful zooms.",
+        "Sound effects only for real moments (an image appearing, a reveal, a fail, a win). Never on normal cuts, facecam switches or subtle zooms; no repeated sounds.",
+        "Music per scene with fewer track changes, cut on awkward beats instead of adding a sound.",
+        "Off-camera lines are removed (\"don't show that\", \"hold on\", figuring out controls). With a Claude key set, Solis can also trim off-camera logistics.",
+        "Pauses tuned to KAYE's measured long-form cutting. No automatic captions in Long Form.",
+        "New: \"cut this pause\" and \"use the other take\" (at the Premiere playhead).",
+        "Learned preferences are now per mode: \"fewer zooms\" on a Long Form edit no longer changes your Competition Intros."
       ],
-      "improved": [],
-      "fixed": [
-        "Revisions now always edit Premiere once an edit exists. They were being saved as notes whenever Premiere's timeline didn't match Solis exactly",
-        "A revision that fails stays a revision, marked Failed with the reason and a Retry button",
-        "Repeated words, stutters and false starts are cut: Solis now transcribes speech word for word (it used to receive a cleaned-up transcript that hid them) and repairs word timings so they can be found",
-        "Captions no longer show \"uh\" and \"um\""
-      ],
-      "testing": [
-        "Try a revision such as \"cut the first hello\" and check it changes the Premiere timeline",
-        "Check that false starts in a new edit are removed"
-      ],
-      "version": "0.17.0"
+      "fixed": [],
+      "version": "0.18.0"
     },
-    "companionVersion": "0.17.0",
-    "bridgeVersion": "0.17.0",
+    "companionVersion": "0.18.0",
+    "bridgeVersion": "0.18.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "9be83ec7706bc1920122480908e5573be89042f65dfe85c08ce3f71f8ab9e8a5",
-    "releaseDate": "2026-10-11",
+    "sha256": "2de0f5fe68c19906ddb87a69725c45ac73b5873e2066b3c078915f97377eec34",
+    "releaseDate": "2026-10-16",
     "publishedBy": "junior"
   }
 }

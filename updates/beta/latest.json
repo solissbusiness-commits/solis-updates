@@ -1,11 +1,11 @@
 {
-  "version": "0.18.1",
-  "notes": "New\n• Solo vid / Multiple POV vid when creating a project. Solo leaves out the Discord/call track (never your mic, never the gameplay audio), and your friend's talking no longer keeps pauses in the cut.\n• Revisions are done instead of asking: \"cut this\", \"this part is boring\", \"add a sound here\", \"make this funnier\", \"add music here\", \"show the facecam here\", \"keep this\", \"delete everything after 1:20\"\n• If no SFX & music folder is connected, Solis tells you before editing, with a button to connect one.\n\nFixed\n• Facecam and gameplay could be swapped (your face full screen, the game in the corner). Solis now tells them apart by what changes over the recording, and you can set the facecam side yourself (project\n• New projects use the KAYE style by default (its facecam and gameplay presets, zooms and pacing).\n• \"Louder\" no longer made a sound quieter.",
-  "pub_date": "2026-10-17T08:02:57.321Z",
+  "version": "0.18.2",
+  "notes": "New\n• Every install now gets the Solis default editing pack automatically: 130 sound effects (hits, awkward, whooshes, risers, suspense, reveals) and the KAYE Premiere presets. It downloads once, is verifie\n• If the connected folders have no music, Solis tells you and lets you add your music folder in one click.",
+  "pub_date": "2026-10-17T08:21:01.143Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk55cTR1b3dVU1R0OEdRaSs5Qy9vYUhjdjRYNzF6ZXVlUkNuRkVaTi9STk9hRTNuczgzRUtWVUpZMXpjZFEya1dWVW1nVjRPN0tGRm0vNFpLNDV2S0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjIzNTE2CWZpbGU6U29saXMgRWRpdF8wLjE4LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguMQpKQStzbkJodXV2Njg1YkJ2RW5MdkpURUZuSWJyTkVseFEvZGdtN1ZmNW1JR1c1ZnFBeUdmTVJJYnJPdkJITTJSRTBYNXNKQ1ZWblRNbW9XN2x3aitEdz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.1/Solis_0.18.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk5RT3lOYUlQSGF4TjgwekRBeTRYWXFpeUtkaWo2NWYvK2pyZG1GRVYvSlZ0cGxWVjViR0RkZ0NVOWZuL0hjTWNLb1V0d0RaYThjRE9heEQyNXFPWHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjI0NTUzCWZpbGU6U29saXMgRWRpdF8wLjE4LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguMgpYQlJrMGV3UGU3akI3dGV1OEhGZlVTZ2VxbTcvNHB2dk1hY0xjelNjdW9ITjUwTkpjNldMd2ZuM3cyNFJuV0Z3clhtMHdGZnlLd1NCRk1MRzBLV3lDZz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.2/Solis_0.18.2_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,23 +14,18 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "Solo vid / Multiple POV vid when creating a project. Solo leaves out the Discord/call track (never your mic, never the gameplay audio), and your friend's talking no longer keeps pauses in the cut.",
-        "Revisions are done instead of asking: \"cut this\", \"this part is boring\", \"add a sound here\", \"make this funnier\", \"add music here\", \"show the facecam here\", \"keep this\", \"delete everything after 1:20\"",
-        "If no SFX & music folder is connected, Solis tells you before editing, with a button to connect one."
+        "Every install now gets the Solis default editing pack automatically: 130 sound effects (hits, awkward, whooshes, risers, suspense, reveals) and the KAYE Premiere presets. It downloads once, is verifie",
+        "If the connected folders have no music, Solis tells you and lets you add your music folder in one click."
       ],
       "improved": [],
-      "fixed": [
-        "Facecam and gameplay could be swapped (your face full screen, the game in the corner). Solis now tells them apart by what changes over the recording, and you can set the facecam side yourself (project",
-        "New projects use the KAYE style by default (its facecam and gameplay presets, zooms and pacing).",
-        "\"Louder\" no longer made a sound quieter."
-      ],
-      "version": "0.18.1"
+      "fixed": [],
+      "version": "0.18.2"
     },
-    "companionVersion": "0.18.1",
-    "bridgeVersion": "0.18.1",
+    "companionVersion": "0.18.2",
+    "bridgeVersion": "0.18.2",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "0587b5f41b21d86408a7fa9ef914c13af300df5018e0afc13a23b554d789afda",
+    "sha256": "f5f6203d1cdd5f1d385d32fc3d9467d2ff4a4fe0186ef9dc9d962de7891ad92a",
     "releaseDate": "2026-10-17",
     "publishedBy": "junior"
   }

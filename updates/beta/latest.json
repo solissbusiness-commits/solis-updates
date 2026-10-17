@@ -1,11 +1,11 @@
 {
-  "version": "0.18.2",
-  "notes": "New\n• Every install now gets the Solis default editing pack automatically: 130 sound effects (hits, awkward, whooshes, risers, suspense, reveals) and the KAYE Premiere presets. It downloads once, is verifie\n• If the connected folders have no music, Solis tells you and lets you add your music folder in one click.",
-  "pub_date": "2026-10-17T08:21:01.143Z",
+  "version": "0.18.3",
+  "notes": "Fixed\n• Long edits no longer freeze on \"Saving project…\". Solis no longer saves in the middle of an edit; the project is saved once, at the very end, and Solis does not wait on Premiere's save dialog.\n• Imports no longer hang on \"Import Files…\". Sounds and music are imported one file at a time, so Premiere stays responsive.\n• \"Edit stopped\" no longer appears when Premiere is busy (saving, importing, a dialog open) or briefly shows another project. Solis waits until your project is back and continues the edit.\n• If Premiere stays busy for a long time, the edit is paused with its progress saved. Open the project in Premiere and choose Resume Edit to continue where it stopped.",
+  "pub_date": "2026-10-17T11:03:21.202Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk5RT3lOYUlQSGF4TjgwekRBeTRYWXFpeUtkaWo2NWYvK2pyZG1GRVYvSlZ0cGxWVjViR0RkZ0NVOWZuL0hjTWNLb1V0d0RaYThjRE9heEQyNXFPWHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjI0NTUzCWZpbGU6U29saXMgRWRpdF8wLjE4LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguMgpYQlJrMGV3UGU3akI3dGV1OEhGZlVTZ2VxbTcvNHB2dk1hY0xjelNjdW9ITjUwTkpjNldMd2ZuM3cyNFJuV0Z3clhtMHdGZnlLd1NCRk1MRzBLV3lDZz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.2/Solis_0.18.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QktaTTZ1ZFc3T0xTTExiL29qUWN0TnFaaU9sZWNuZ0RpYnBjZlVFcmdlczdSRUxtWFlack5IUjVjQjJYSWttL3NGYnRVMG5sbm1tWk5mc2p5ZWROcFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjMwNTk1CWZpbGU6U29saXMgRWRpdF8wLjE4LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguMwpEYXlwNSthVUxlS3o3NkUwdWwrNFdGL2dZRzB5WE52R1AxMmFiTTBCeDl5N1NhTmEvZ1JOY1Vhc1htY3R4bitrNm1lTXB2MlU3ZkNhNEt1cUJLRHdCUT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.3/Solis_0.18.3_x64-setup.exe"
     }
   },
   "solis": {
@@ -13,19 +13,21 @@
     "policy": "NORMAL",
     "minimumSupportedVersion": null,
     "notes": {
-      "new": [
-        "Every install now gets the Solis default editing pack automatically: 130 sound effects (hits, awkward, whooshes, risers, suspense, reveals) and the KAYE Premiere presets. It downloads once, is verifie",
-        "If the connected folders have no music, Solis tells you and lets you add your music folder in one click."
-      ],
+      "new": [],
       "improved": [],
-      "fixed": [],
-      "version": "0.18.2"
+      "fixed": [
+        "Long edits no longer freeze on \"Saving project…\". Solis no longer saves in the middle of an edit; the project is saved once, at the very end, and Solis does not wait on Premiere's save dialog.",
+        "Imports no longer hang on \"Import Files…\". Sounds and music are imported one file at a time, so Premiere stays responsive.",
+        "\"Edit stopped\" no longer appears when Premiere is busy (saving, importing, a dialog open) or briefly shows another project. Solis waits until your project is back and continues the edit.",
+        "If Premiere stays busy for a long time, the edit is paused with its progress saved. Open the project in Premiere and choose Resume Edit to continue where it stopped."
+      ],
+      "version": "0.18.3"
     },
-    "companionVersion": "0.18.2",
-    "bridgeVersion": "0.18.2",
+    "companionVersion": "0.18.3",
+    "bridgeVersion": "0.18.3",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "f5f6203d1cdd5f1d385d32fc3d9467d2ff4a4fe0186ef9dc9d962de7891ad92a",
+    "sha256": "7a859029ec1af8927991bbd0286f98e0bd2824994f3e65eb680267fbe65febd0",
     "releaseDate": "2026-10-17",
     "publishedBy": "junior"
   }

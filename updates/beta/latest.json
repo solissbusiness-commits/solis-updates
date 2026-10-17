@@ -1,11 +1,11 @@
 {
-  "version": "0.18.4",
-  "notes": "Fixed\n• Premiere no longer goes \"Not Responding\" during long edits. Solis now gives Premiere time to catch up: it sends smaller batches, rests between them in proportion to how hard Premiere just worked, and \n• Sounds, music and images are now imported at the start of the edit, while Premiere is idle, one file at a time. Before, they were imported right after thousands of timeline changes, which froze Premie\n• An edit stopped by an older version resumes cleanly: Solis imports what it still needs first, then continues where it left off without redoing the cut.\n• No saving in the middle of an edit: the project is saved once at the end, and Solis does not wait on Premiere's save dialog.\n• \"Edit stopped\" no longer appears when Premiere is busy or briefly shows another project. Solis waits and continues. If it waits too long, the edit pauses with progress saved; choose Resume Edit.",
-  "pub_date": "2026-10-17T11:26:01.043Z",
+  "version": "0.18.5",
+  "notes": "Fixed\n• Premiere no longer freezes and closes (\"Not Responding\") during long edits. Solis now builds the edit with the sequence closed and opens it when the edit is done. Before, Premiere redrew the whole tim\n• If Premiere starts to slow down, Solis stops and gives it up to 20 seconds to catch up before sending anything else.\n• Fewer full timeline checks while cutting.\n• Sounds, music and images are imported at the start, one file at a time. Smaller batches, with rests between batches and steps.\n• No saving in the middle of an edit: the project is saved once at the end. A busy Premiere is waited for instead of \"Edit stopped\"; Resume Edit continues an edit that was interrupted.\n• While Solis edits, the new sequence stays closed. It opens by itself at the end, and you can find it in the SOLIS > SEQUENCES bin.",
+  "pub_date": "2026-10-17T12:20:51.263Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkNXMTlYTVZaemE0S05QMytNU2hMT1hBb2RWL2ROV0srNzBnUUJYbnVOd2ZJMnU1NlpYL3RlbHhRc25vaGMwQ1Y2eWpoL2QxWUtIN0FZNHlBaTA3ZXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjM2MjY5CWZpbGU6U29saXMgRWRpdF8wLjE4LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguNApKMlEvcFhmNUpQNWw0MmVNUHZVc2UyZStWY3Y2eks0NFVNWVpEV2V3V0F4eHpFcFFCT0VTR3ZaQnorcmxtbTYwblJPelFrN2x1dTY5dnNaQ2tVbGdDdz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.4/Solis_0.18.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QktodUsvdjRubXJEaHZtK3diSW9nRGtQL2ZWQW1QdlF4RUNsN1EwNlJ2d1ZnNk0zTWljQzBJd2ZlaDMwNVluZ3FOa1lTQXVmVlFGWEhZSnZoQ3psUVFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjM4NTU3CWZpbGU6U29saXMgRWRpdF8wLjE4LjVfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguNQp2MTNUQVVEcDUxV3NaSXd1a2d6TDk2QjIwZysyKzFTQU5Id0l5bW9tNk1IeEFqekFBRUNIeE9mZWhqMXR5aDBWSnY4NFR3eFFSaDcrK1JHbldUeUdBUT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.5/Solis_0.18.5_x64-setup.exe"
     }
   },
   "solis": {
@@ -16,19 +16,20 @@
       "new": [],
       "improved": [],
       "fixed": [
-        "Premiere no longer goes \"Not Responding\" during long edits. Solis now gives Premiere time to catch up: it sends smaller batches, rests between them in proportion to how hard Premiere just worked, and ",
-        "Sounds, music and images are now imported at the start of the edit, while Premiere is idle, one file at a time. Before, they were imported right after thousands of timeline changes, which froze Premie",
-        "An edit stopped by an older version resumes cleanly: Solis imports what it still needs first, then continues where it left off without redoing the cut.",
-        "No saving in the middle of an edit: the project is saved once at the end, and Solis does not wait on Premiere's save dialog.",
-        "\"Edit stopped\" no longer appears when Premiere is busy or briefly shows another project. Solis waits and continues. If it waits too long, the edit pauses with progress saved; choose Resume Edit."
+        "Premiere no longer freezes and closes (\"Not Responding\") during long edits. Solis now builds the edit with the sequence closed and opens it when the edit is done. Before, Premiere redrew the whole tim",
+        "If Premiere starts to slow down, Solis stops and gives it up to 20 seconds to catch up before sending anything else.",
+        "Fewer full timeline checks while cutting.",
+        "Sounds, music and images are imported at the start, one file at a time. Smaller batches, with rests between batches and steps.",
+        "No saving in the middle of an edit: the project is saved once at the end. A busy Premiere is waited for instead of \"Edit stopped\"; Resume Edit continues an edit that was interrupted.",
+        "While Solis edits, the new sequence stays closed. It opens by itself at the end, and you can find it in the SOLIS > SEQUENCES bin."
       ],
-      "version": "0.18.4"
+      "version": "0.18.5"
     },
-    "companionVersion": "0.18.4",
-    "bridgeVersion": "0.18.4",
+    "companionVersion": "0.18.5",
+    "bridgeVersion": "0.18.5",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "675e7a3f7d067dbf80d237782728a7d2a06d9bc921ac4137cf3784c89f1005db",
+    "sha256": "626ff5bc158404fed463719975bffeb648ee561bca0e298176be17de1ec32879",
     "releaseDate": "2026-10-17",
     "publishedBy": "junior"
   }

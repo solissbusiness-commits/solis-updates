@@ -1,11 +1,11 @@
 {
-  "version": "0.18.3",
-  "notes": "Fixed\n• Long edits no longer freeze on \"Saving project…\". Solis no longer saves in the middle of an edit; the project is saved once, at the very end, and Solis does not wait on Premiere's save dialog.\n• Imports no longer hang on \"Import Files…\". Sounds and music are imported one file at a time, so Premiere stays responsive.\n• \"Edit stopped\" no longer appears when Premiere is busy (saving, importing, a dialog open) or briefly shows another project. Solis waits until your project is back and continues the edit.\n• If Premiere stays busy for a long time, the edit is paused with its progress saved. Open the project in Premiere and choose Resume Edit to continue where it stopped.",
-  "pub_date": "2026-10-17T11:03:21.202Z",
+  "version": "0.18.4",
+  "notes": "Fixed\n• Premiere no longer goes \"Not Responding\" during long edits. Solis now gives Premiere time to catch up: it sends smaller batches, rests between them in proportion to how hard Premiere just worked, and \n• Sounds, music and images are now imported at the start of the edit, while Premiere is idle, one file at a time. Before, they were imported right after thousands of timeline changes, which froze Premie\n• An edit stopped by an older version resumes cleanly: Solis imports what it still needs first, then continues where it left off without redoing the cut.\n• No saving in the middle of an edit: the project is saved once at the end, and Solis does not wait on Premiere's save dialog.\n• \"Edit stopped\" no longer appears when Premiere is busy or briefly shows another project. Solis waits and continues. If it waits too long, the edit pauses with progress saved; choose Resume Edit.",
+  "pub_date": "2026-10-17T11:26:01.043Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QktaTTZ1ZFc3T0xTTExiL29qUWN0TnFaaU9sZWNuZ0RpYnBjZlVFcmdlczdSRUxtWFlack5IUjVjQjJYSWttL3NGYnRVMG5sbm1tWk5mc2p5ZWROcFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjMwNTk1CWZpbGU6U29saXMgRWRpdF8wLjE4LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguMwpEYXlwNSthVUxlS3o3NkUwdWwrNFdGL2dZRzB5WE52R1AxMmFiTTBCeDl5N1NhTmEvZ1JOY1Vhc1htY3R4bitrNm1lTXB2MlU3ZkNhNEt1cUJLRHdCUT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.3/Solis_0.18.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkNXMTlYTVZaemE0S05QMytNU2hMT1hBb2RWL2ROV0srNzBnUUJYbnVOd2ZJMnU1NlpYL3RlbHhRc25vaGMwQ1Y2eWpoL2QxWUtIN0FZNHlBaTA3ZXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjM2MjY5CWZpbGU6U29saXMgRWRpdF8wLjE4LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguNApKMlEvcFhmNUpQNWw0MmVNUHZVc2UyZStWY3Y2eks0NFVNWVpEV2V3V0F4eHpFcFFCT0VTR3ZaQnorcmxtbTYwblJPelFrN2x1dTY5dnNaQ2tVbGdDdz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.4/Solis_0.18.4_x64-setup.exe"
     }
   },
   "solis": {
@@ -16,18 +16,19 @@
       "new": [],
       "improved": [],
       "fixed": [
-        "Long edits no longer freeze on \"Saving project…\". Solis no longer saves in the middle of an edit; the project is saved once, at the very end, and Solis does not wait on Premiere's save dialog.",
-        "Imports no longer hang on \"Import Files…\". Sounds and music are imported one file at a time, so Premiere stays responsive.",
-        "\"Edit stopped\" no longer appears when Premiere is busy (saving, importing, a dialog open) or briefly shows another project. Solis waits until your project is back and continues the edit.",
-        "If Premiere stays busy for a long time, the edit is paused with its progress saved. Open the project in Premiere and choose Resume Edit to continue where it stopped."
+        "Premiere no longer goes \"Not Responding\" during long edits. Solis now gives Premiere time to catch up: it sends smaller batches, rests between them in proportion to how hard Premiere just worked, and ",
+        "Sounds, music and images are now imported at the start of the edit, while Premiere is idle, one file at a time. Before, they were imported right after thousands of timeline changes, which froze Premie",
+        "An edit stopped by an older version resumes cleanly: Solis imports what it still needs first, then continues where it left off without redoing the cut.",
+        "No saving in the middle of an edit: the project is saved once at the end, and Solis does not wait on Premiere's save dialog.",
+        "\"Edit stopped\" no longer appears when Premiere is busy or briefly shows another project. Solis waits and continues. If it waits too long, the edit pauses with progress saved; choose Resume Edit."
       ],
-      "version": "0.18.3"
+      "version": "0.18.4"
     },
-    "companionVersion": "0.18.3",
-    "bridgeVersion": "0.18.3",
+    "companionVersion": "0.18.4",
+    "bridgeVersion": "0.18.4",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "7a859029ec1af8927991bbd0286f98e0bd2824994f3e65eb680267fbe65febd0",
+    "sha256": "675e7a3f7d067dbf80d237782728a7d2a06d9bc921ac4137cf3784c89f1005db",
     "releaseDate": "2026-10-17",
     "publishedBy": "junior"
   }

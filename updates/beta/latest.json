@@ -1,11 +1,11 @@
 {
-  "version": "0.18.0",
-  "notes": "Improved\n• Edits are now built in Premiere as small, checkpointed steps instead of one giant command. The old way re-read the whole timeline for every clip, which froze Premiere on long videos.\n• Solis paces itself: bigger steps when Premiere is fast, smaller steps and longer pauses when it slows down. Only one step is ever in flight.\n• If Premiere or Solis closes mid-edit, your progress is saved. Choose **Resume Edit** to continue where it stopped — nothing already built is rebuilt or duplicated.\n• **Pause** and **Cancel** while Premiere is building (they take effect between steps).\n• Edits of any length fit (previously over ~600 shots couldn't be sent at all). Sources up to 4 hours.\n• Long recordings are transcribed in parts, each saved as it finishes, with a real time estimate.\n• Scene detection is about 3× faster; it runs alongside transcription on machines with spare cores.\n• Solis' helper processes run at lower priority so Premiere always comes first.\n• A dedicated Long Form planner: the video is split into scenes with a purpose (hook, setup, challenge, fail, win, reveal, outro…).\n• Full facecam only for real reactions and talking to the viewer, spaced like your reference. Fewer, purposeful zooms.\n• Sound effects only for real moments (an image appearing, a reveal, a fail, a win). Never on normal cuts, facecam switches or subtle zooms; no repeated sounds.\n• Music per scene with fewer track changes, cut on awkward beats instead of adding a sound.\n• Off-camera lines are removed (\"don't show that\", \"hold on\", figuring out controls). With a Claude key set, Solis can also trim off-camera logistics.\n• Pauses tuned to KAYE's measured long-form cutting. No automatic captions in Long Form.\n• New: \"cut this pause\" and \"use the other take\" (at the Premiere playhead).\n• Learned preferences are now per mode: \"fewer zooms\" on a Long Form edit no longer changes your Competition Intros.",
-  "pub_date": "2026-10-16T06:02:28.850Z",
+  "version": "0.18.1",
+  "notes": "New\n• Solo vid / Multiple POV vid when creating a project. Solo leaves out the Discord/call track (never your mic, never the gameplay audio), and your friend's talking no longer keeps pauses in the cut.\n• Revisions are done instead of asking: \"cut this\", \"this part is boring\", \"add a sound here\", \"make this funnier\", \"add music here\", \"show the facecam here\", \"keep this\", \"delete everything after 1:20\"\n• If no SFX & music folder is connected, Solis tells you before editing, with a button to connect one.\n\nFixed\n• Facecam and gameplay could be swapped (your face full screen, the game in the corner). Solis now tells them apart by what changes over the recording, and you can set the facecam side yourself (project\n• New projects use the KAYE style by default (its facecam and gameplay presets, zooms and pacing).\n• \"Louder\" no longer made a sound quieter.",
+  "pub_date": "2026-10-17T08:02:57.321Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkE4dnBVdjE0OVFZNUNtNm82QXljeSswTVVzWWJEVHJPaFMzd21Da3JtbzYySi9pNGZBYU5BMDJEaDUwTXp4K1NHTmxEZnBLNWhGbjVYUTAwSjJocEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTMwMjg4CWZpbGU6U29saXMgRWRpdF8wLjE4LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguMAoyYXJqNG1yMGUyVzBkbEs4dXVtSGxhdXlCTHdaaFBsUFkxRFJkdGdqNVJqemNSRkx6a2l3TDZPUXRYczMzUmFVclEzM0FaVEgvOE5BQ0U3Wkh1dklBQT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.0/Solis_0.18.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk55cTR1b3dVU1R0OEdRaSs5Qy9vYUhjdjRYNzF6ZXVlUkNuRkVaTi9STk9hRTNuczgzRUtWVUpZMXpjZFEya1dWVW1nVjRPN0tGRm0vNFpLNDV2S0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMjIzNTE2CWZpbGU6U29saXMgRWRpdF8wLjE4LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguMQpKQStzbkJodXV2Njg1YkJ2RW5MdkpURUZuSWJyTkVseFEvZGdtN1ZmNW1JR1c1ZnFBeUdmTVJJYnJPdkJITTJSRTBYNXNKQ1ZWblRNbW9XN2x3aitEdz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.1/Solis_0.18.1_x64-setup.exe"
     }
   },
   "solis": {
@@ -13,34 +13,25 @@
     "policy": "NORMAL",
     "minimumSupportedVersion": null,
     "notes": {
-      "new": [],
-      "improved": [
-        "Edits are now built in Premiere as small, checkpointed steps instead of one giant command. The old way re-read the whole timeline for every clip, which froze Premiere on long videos.",
-        "Solis paces itself: bigger steps when Premiere is fast, smaller steps and longer pauses when it slows down. Only one step is ever in flight.",
-        "If Premiere or Solis closes mid-edit, your progress is saved. Choose **Resume Edit** to continue where it stopped — nothing already built is rebuilt or duplicated.",
-        "**Pause** and **Cancel** while Premiere is building (they take effect between steps).",
-        "Edits of any length fit (previously over ~600 shots couldn't be sent at all). Sources up to 4 hours.",
-        "Long recordings are transcribed in parts, each saved as it finishes, with a real time estimate.",
-        "Scene detection is about 3× faster; it runs alongside transcription on machines with spare cores.",
-        "Solis' helper processes run at lower priority so Premiere always comes first.",
-        "A dedicated Long Form planner: the video is split into scenes with a purpose (hook, setup, challenge, fail, win, reveal, outro…).",
-        "Full facecam only for real reactions and talking to the viewer, spaced like your reference. Fewer, purposeful zooms.",
-        "Sound effects only for real moments (an image appearing, a reveal, a fail, a win). Never on normal cuts, facecam switches or subtle zooms; no repeated sounds.",
-        "Music per scene with fewer track changes, cut on awkward beats instead of adding a sound.",
-        "Off-camera lines are removed (\"don't show that\", \"hold on\", figuring out controls). With a Claude key set, Solis can also trim off-camera logistics.",
-        "Pauses tuned to KAYE's measured long-form cutting. No automatic captions in Long Form.",
-        "New: \"cut this pause\" and \"use the other take\" (at the Premiere playhead).",
-        "Learned preferences are now per mode: \"fewer zooms\" on a Long Form edit no longer changes your Competition Intros."
+      "new": [
+        "Solo vid / Multiple POV vid when creating a project. Solo leaves out the Discord/call track (never your mic, never the gameplay audio), and your friend's talking no longer keeps pauses in the cut.",
+        "Revisions are done instead of asking: \"cut this\", \"this part is boring\", \"add a sound here\", \"make this funnier\", \"add music here\", \"show the facecam here\", \"keep this\", \"delete everything after 1:20\"",
+        "If no SFX & music folder is connected, Solis tells you before editing, with a button to connect one."
       ],
-      "fixed": [],
-      "version": "0.18.0"
+      "improved": [],
+      "fixed": [
+        "Facecam and gameplay could be swapped (your face full screen, the game in the corner). Solis now tells them apart by what changes over the recording, and you can set the facecam side yourself (project",
+        "New projects use the KAYE style by default (its facecam and gameplay presets, zooms and pacing).",
+        "\"Louder\" no longer made a sound quieter."
+      ],
+      "version": "0.18.1"
     },
-    "companionVersion": "0.18.0",
-    "bridgeVersion": "0.18.0",
+    "companionVersion": "0.18.1",
+    "bridgeVersion": "0.18.1",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "2de0f5fe68c19906ddb87a69725c45ac73b5873e2066b3c078915f97377eec34",
-    "releaseDate": "2026-10-16",
+    "sha256": "0587b5f41b21d86408a7fa9ef914c13af300df5018e0afc13a23b554d789afda",
+    "releaseDate": "2026-10-17",
     "publishedBy": "junior"
   }
 }

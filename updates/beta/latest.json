@@ -1,11 +1,11 @@
 {
-  "version": "0.18.6",
-  "notes": "New\n• Solo vids: choose which audio track is Discord. In the project, under \"Who's in it: Solo vid\", a new \"Discord track\" setting lets you pick Track 2, Track 3, both, or no Discord track. Solis cuts exact\n\nFixed\n• Premiere no longer freezes and closes (\"Not Responding\") during long edits. Solis builds the edit with the sequence closed and opens it when the edit is done, so Premiere doesn't redraw the whole time\n• If Premiere starts to slow down, Solis gives it up to 20 seconds to catch up before sending anything else. Sounds, music and images are imported at the start, one file at a time.\n• No saving in the middle of an edit: the project is saved once at the end. A busy Premiere is waited for instead of \"Edit stopped\"; Resume Edit continues an edit that was interrupted.",
-  "pub_date": "2026-10-19T10:25:53.060Z",
+  "version": "0.18.7",
+  "notes": "New\n• Solo vids: choose which audio track is Discord (Track 2, Track 3, both, or none) under \"Discord track\" in the project. Next to each track, Solis shows what it detected.\n• Premiere no longer freezes during long edits: the sequence is built closed and opens when the edit is done. Imports happen first; no saving in the middle of an edit; a busy Premiere is waited for.\n\nFixed\n• Solo vids no longer keep the Discord call. Solis used to treat the track that talks the most as your mic, so when your friend talked more, it kept their talking and cut around it. Now track 1 is alway\n• Pauses are measured on your mic alone after the call track is removed (before, the friend's talking still counted as \"not a pause\").\n• Quiet small talk under −40 dB (mumbles, side comments, words with no voice behind them) no longer holds clips in the edit.",
+  "pub_date": "2026-10-20T08:45:50.472Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkF1VS92OXRwTVFQT0F0bkNVNjl2V1E3TXI4UzViWGF5OC91S0pRYnY3S0ZnbGZybUlpT0FYdzNoQm5FcnJtcjJTc1FDbmFpZnNJcTltZ00vOVc5VHdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDAwODU5CWZpbGU6U29saXMgRWRpdF8wLjE4LjZfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguNgpJeGJXNktRNFNUOWYvcUZDMDN6VnZwSFgzNk1KanIvRnBuYzd6anRDRkVndDF5NmdSeDRkQnVwTlcyRGVtU3gwb1Y4aE0zU2hPbnVQd2ZMbElydmtBQT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.6/Solis_0.18.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QlA3aHBqcUc5K3Y0bjQ2c0xJTWp4L243WElhbHBxeWJpNDRObVdiN0l2bzJGak1aeUVhZm5GdE1oQk53STNmUnorRGFodUVnNHRtSjlUOWc3VW1sM0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDY0MDA2CWZpbGU6U29saXMgRWRpdF8wLjE4LjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguNwpJSVRNWk8xbmlwQ0ZQWEp1RjFoU2htaFdpV0V2QWlwWS85MmFMeWNGY3B4N3JRdmV1UDYweUlnSWwzZWhDeisvV2NkMFVXNkVvamxMTkY3WEY2S0tDdz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.7/Solis_0.18.7_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,22 +14,23 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "Solo vids: choose which audio track is Discord. In the project, under \"Who's in it: Solo vid\", a new \"Discord track\" setting lets you pick Track 2, Track 3, both, or no Discord track. Solis cuts exact"
+        "Solo vids: choose which audio track is Discord (Track 2, Track 3, both, or none) under \"Discord track\" in the project. Next to each track, Solis shows what it detected.",
+        "Premiere no longer freezes during long edits: the sequence is built closed and opens when the edit is done. Imports happen first; no saving in the middle of an edit; a busy Premiere is waited for."
       ],
       "improved": [],
       "fixed": [
-        "Premiere no longer freezes and closes (\"Not Responding\") during long edits. Solis builds the edit with the sequence closed and opens it when the edit is done, so Premiere doesn't redraw the whole time",
-        "If Premiere starts to slow down, Solis gives it up to 20 seconds to catch up before sending anything else. Sounds, music and images are imported at the start, one file at a time.",
-        "No saving in the middle of an edit: the project is saved once at the end. A busy Premiere is waited for instead of \"Edit stopped\"; Resume Edit continues an edit that was interrupted."
+        "Solo vids no longer keep the Discord call. Solis used to treat the track that talks the most as your mic, so when your friend talked more, it kept their talking and cut around it. Now track 1 is alway",
+        "Pauses are measured on your mic alone after the call track is removed (before, the friend's talking still counted as \"not a pause\").",
+        "Quiet small talk under −40 dB (mumbles, side comments, words with no voice behind them) no longer holds clips in the edit."
       ],
-      "version": "0.18.6"
+      "version": "0.18.7"
     },
-    "companionVersion": "0.18.6",
-    "bridgeVersion": "0.18.6",
+    "companionVersion": "0.18.7",
+    "bridgeVersion": "0.18.7",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "a6af4bb271149db913922f0cf0f1ab01f94f0776f262e8cba2951f1cdf241929",
-    "releaseDate": "2026-10-19",
+    "sha256": "5832d0416ff046a7efdf55e6fd52e7165f4419798a8b54f8256a327a31472b03",
+    "releaseDate": "2026-10-20",
     "publishedBy": "junior"
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.18.7",
-  "notes": "New\n• Solo vids: choose which audio track is Discord (Track 2, Track 3, both, or none) under \"Discord track\" in the project. Next to each track, Solis shows what it detected.\n• Premiere no longer freezes during long edits: the sequence is built closed and opens when the edit is done. Imports happen first; no saving in the middle of an edit; a busy Premiere is waited for.\n\nFixed\n• Solo vids no longer keep the Discord call. Solis used to treat the track that talks the most as your mic, so when your friend talked more, it kept their talking and cut around it. Now track 1 is alway\n• Pauses are measured on your mic alone after the call track is removed (before, the friend's talking still counted as \"not a pause\").\n• Quiet small talk under −40 dB (mumbles, side comments, words with no voice behind them) no longer holds clips in the edit.",
-  "pub_date": "2026-10-20T08:45:50.472Z",
+  "version": "0.20.0",
+  "notes": "New\n• Open AI models that run on your own graphics card: nothing leaves your computer and no account or key is needed. One download, sized for your card (about 6.5 GB on a 12 GB card), asked for in Settings\n• Story judgment like an editor: every line of a Long Form edit is scored for how much the video needs it (plot beats, jokes and reactions stay; logistics, rehearsal, phone-call admin and filler go). Ev\n• Face and voice: Solis reads your expression (laughing, shocked, surprised, excited, angry...) at the strongest moments, and your voice's pitch and energy on every line. A real reaction gets full facec\n• Points at what you point at: \"look at my health\", \"250 coins\", \"that guy in the purple shirt\" - Solis finds it on screen and zooms to it; when it moves, the zoom follows it (keyframed pan).\n• Turn captions on in New Project or in the project's Direction panel and choose the font (any installed font), size, stroke width and color, text color, the spoken-word highlight color, ALL CAPS, shado\n• Music matches the scene by how it sounds: Solis measures each track's tempo, brightness and dynamics, so it picks hype music for hype moments even when the files are named \"track 07\". Scene moods foll\n• Reaction shots are chosen from face and voice, not only loudness.\n• Start from an existing Premiere project (your cuts kept exactly); much faster transcription and scene detection on NVIDIA cards; the facecam box checked against real faces; production talk, retakes an",
+  "pub_date": "2026-10-23T11:31:42.210Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QlA3aHBqcUc5K3Y0bjQ2c0xJTWp4L243WElhbHBxeWJpNDRObVdiN0l2bzJGak1aeUVhZm5GdE1oQk53STNmUnorRGFodUVnNHRtSjlUOWc3VW1sM0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNDY0MDA2CWZpbGU6U29saXMgRWRpdF8wLjE4LjdfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMTguNwpJSVRNWk8xbmlwQ0ZQWEp1RjFoU2htaFdpV0V2QWlwWS85MmFMeWNGY3B4N3JRdmV1UDYweUlnSWwzZWhDeisvV2NkMFVXNkVvamxMTkY3WEY2S0tDdz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.18.7/Solis_0.18.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk1KQlZsUFhIZ3pSeFFrb0ZTUTFPSGJLQmpXTVQzL1hSL21VanFSRGRzeG9tNUFnTXRyNnl2Vk0velNRUVRuSjRBMGNkUkVNZmkwcnVVSGtoOEdPaWdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNzU0NjE3CWZpbGU6U29saXMgRWRpdF8wLjIwLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjAuMAp5M1VmT1VXVWVkRWorNjFNNFRMU0tiMld2eEVRcGNIU1AvcDdKZzB6Q1NFMkJIVXlobnN1TGZ6MUthMXR1eExmL2NFeHhDalA1dStjYlJtUzRldEdBdz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.20.0/Solis_0.20.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -14,23 +14,25 @@
     "minimumSupportedVersion": null,
     "notes": {
       "new": [
-        "Solo vids: choose which audio track is Discord (Track 2, Track 3, both, or none) under \"Discord track\" in the project. Next to each track, Solis shows what it detected.",
-        "Premiere no longer freezes during long edits: the sequence is built closed and opens when the edit is done. Imports happen first; no saving in the middle of an edit; a busy Premiere is waited for."
+        "Open AI models that run on your own graphics card: nothing leaves your computer and no account or key is needed. One download, sized for your card (about 6.5 GB on a 12 GB card), asked for in Settings",
+        "Story judgment like an editor: every line of a Long Form edit is scored for how much the video needs it (plot beats, jokes and reactions stay; logistics, rehearsal, phone-call admin and filler go). Ev",
+        "Face and voice: Solis reads your expression (laughing, shocked, surprised, excited, angry...) at the strongest moments, and your voice's pitch and energy on every line. A real reaction gets full facec",
+        "Points at what you point at: \"look at my health\", \"250 coins\", \"that guy in the purple shirt\" - Solis finds it on screen and zooms to it; when it moves, the zoom follows it (keyframed pan).",
+        "Turn captions on in New Project or in the project's Direction panel and choose the font (any installed font), size, stroke width and color, text color, the spoken-word highlight color, ALL CAPS, shado",
+        "Music matches the scene by how it sounds: Solis measures each track's tempo, brightness and dynamics, so it picks hype music for hype moments even when the files are named \"track 07\". Scene moods foll",
+        "Reaction shots are chosen from face and voice, not only loudness.",
+        "Start from an existing Premiere project (your cuts kept exactly); much faster transcription and scene detection on NVIDIA cards; the facecam box checked against real faces; production talk, retakes an"
       ],
       "improved": [],
-      "fixed": [
-        "Solo vids no longer keep the Discord call. Solis used to treat the track that talks the most as your mic, so when your friend talked more, it kept their talking and cut around it. Now track 1 is alway",
-        "Pauses are measured on your mic alone after the call track is removed (before, the friend's talking still counted as \"not a pause\").",
-        "Quiet small talk under −40 dB (mumbles, side comments, words with no voice behind them) no longer holds clips in the edit."
-      ],
-      "version": "0.18.7"
+      "fixed": [],
+      "version": "0.20.0"
     },
-    "companionVersion": "0.18.7",
-    "bridgeVersion": "0.18.7",
+    "companionVersion": "0.20.0",
+    "bridgeVersion": "0.20.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "5832d0416ff046a7efdf55e6fd52e7165f4419798a8b54f8256a327a31472b03",
-    "releaseDate": "2026-10-20",
+    "sha256": "579d38db46bc59713dd2bedea6e48589cc936507ccaae215c31cfdfc308ee301",
+    "releaseDate": "2026-10-23",
     "publishedBy": "junior"
   }
 }

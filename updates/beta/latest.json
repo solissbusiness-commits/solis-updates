@@ -1,11 +1,11 @@
 {
-  "version": "0.22.0",
-  "notes": "New\n• Drop a video whose style you want. Solis hears every sound effect in it and recognises the same sound used again and again (\"a whoosh ×9, on cuts\").\n• It finds those exact sounds in your pack, even when the video plays them under voice and music. Then your edit uses them for the same kind of moments: Long Form prefers them, and Competition Intros us\n• Sounds your pack doesn't have still teach the style: Solis guesses what kind they are (impact, whoosh, pop, ding or riser) and where they're used (on cuts, on zooms, right after a line, in pauses).\n• Zooms: Solis now also finds punch-in cuts (a jump to the same shot, closer), and your zooms push as far as the reference's do.\n• Faster study: the picture is read on the graphics card while the sound and speech are analysed.\n• Several videos from one channel merge into one style, so one odd video doesn't decide it.\n• References you added before this update: choose Re-analyze to hear their sounds.\n• Solis doesn't download from YouTube. A link still gives the title, channel and thumbnail.\n• To learn a video's sounds and zooms, drop the video file. For your own videos, use YouTube Studio > Content > Options > Download.\n• One box to start: add clips, say how it should feel, and walk away. You get a live timer, a \"your edit is ready\" notification, closing the window doesn't stop the edit, and tonight's queue edits video",
-  "pub_date": "2026-10-24T00:19:58.690Z",
+  "version": "0.23.0",
+  "notes": "Improved\n• Solis AI now reads what's said, not just how loud it is. A goodbye or a serious talk gets emotional or calm music instead of a hype intro. A video titled like a goodbye (\"… is leaving …\") counts as on\n• Sound effects: the punchlines, shocks, wins and fails Solis AI picks out get a sound, and so do big surprised reactions and laughs. In a sad stretch only a real joke gets one.\n• Every pop-up pops: images and labels now get their pop sound. Before, they were added after the sounds were planned, so they never got one. The same pop comes back for each pop-up, the way editors do;\n• Things named by what they are now pop up: \"Slob Clan\", \"group channel\", \"my first channel\", \"Minecraft channel\", \"YouTube shorts\", \"2 million subscribers\". So do games and people said in passing, like\n• Up to two a minute in Long Form, never two within 8 seconds. The same thing spelled two ways (\"Slob Clan\" and \"Slub Clan\") shows once. Talk about \"this video\" is never a pop-up.\n• Solis AI's answers are read however the model lays them out. Before, answers written on one line were dropped, which also hurt story judgment.\n• Revisions keep the reactions and the read their edit was planned with.",
+  "pub_date": "2026-10-24T02:57:00.311Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkY3OGErSDNZSTVWUTd4Qm5nSXVPOGl1T0d3SFlJUVpzdTBlOXpzSHh1aHZiRjNKanM0dUNiK1lvZ2tReHI1UURtS25BcjV5dk1PNHdLYUhFbzdUNkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODAxMDkzCWZpbGU6U29saXMgRWRpdF8wLjIyLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjIuMApwUGYxSzVuLzgveUgrR3VnMjV0YmxEdXNwanYvcWZYTXNLTlRJOUhsMUNLSU9QSlJGSjEzamhQSjFCL1JyTWcxcnhndVdsWHdqN2RaREtaUXhJNlpDdz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.22.0/Solis_0.22.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QklLS1hRdzUwK3M3VmUyMTFmYzVPUjkzUE5vMXBPNFBlbEdkcEN1MW9Cb2ZuYUUzckZiTC9yRDZ2VStBNnl0Sm1wcnB5dGNLbGF5TGdvTVZQUkVuVlFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODA4NTk5CWZpbGU6U29saXMgRWRpdF8wLjIzLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjMuMApXcVZEVlg4a3pvUDE5b3ZkZDRlTUdRdEo4SkJBTHNJQUxzSmhyTFZQUXNqZ2g2OGo2Wmp3YzJsR1BLZEpMQUVxdUpQbC9hTGN5eURXZ3NxTURldEhEQT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.23.0/Solis_0.23.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -13,27 +13,24 @@
     "policy": "NORMAL",
     "minimumSupportedVersion": null,
     "notes": {
-      "new": [
-        "Drop a video whose style you want. Solis hears every sound effect in it and recognises the same sound used again and again (\"a whoosh ×9, on cuts\").",
-        "It finds those exact sounds in your pack, even when the video plays them under voice and music. Then your edit uses them for the same kind of moments: Long Form prefers them, and Competition Intros us",
-        "Sounds your pack doesn't have still teach the style: Solis guesses what kind they are (impact, whoosh, pop, ding or riser) and where they're used (on cuts, on zooms, right after a line, in pauses).",
-        "Zooms: Solis now also finds punch-in cuts (a jump to the same shot, closer), and your zooms push as far as the reference's do.",
-        "Faster study: the picture is read on the graphics card while the sound and speech are analysed.",
-        "Several videos from one channel merge into one style, so one odd video doesn't decide it.",
-        "References you added before this update: choose Re-analyze to hear their sounds.",
-        "Solis doesn't download from YouTube. A link still gives the title, channel and thumbnail.",
-        "To learn a video's sounds and zooms, drop the video file. For your own videos, use YouTube Studio > Content > Options > Download.",
-        "One box to start: add clips, say how it should feel, and walk away. You get a live timer, a \"your edit is ready\" notification, closing the window doesn't stop the edit, and tonight's queue edits video"
+      "new": [],
+      "improved": [
+        "Solis AI now reads what's said, not just how loud it is. A goodbye or a serious talk gets emotional or calm music instead of a hype intro. A video titled like a goodbye (\"… is leaving …\") counts as on",
+        "Sound effects: the punchlines, shocks, wins and fails Solis AI picks out get a sound, and so do big surprised reactions and laughs. In a sad stretch only a real joke gets one.",
+        "Every pop-up pops: images and labels now get their pop sound. Before, they were added after the sounds were planned, so they never got one. The same pop comes back for each pop-up, the way editors do;",
+        "Things named by what they are now pop up: \"Slob Clan\", \"group channel\", \"my first channel\", \"Minecraft channel\", \"YouTube shorts\", \"2 million subscribers\". So do games and people said in passing, like",
+        "Up to two a minute in Long Form, never two within 8 seconds. The same thing spelled two ways (\"Slob Clan\" and \"Slub Clan\") shows once. Talk about \"this video\" is never a pop-up.",
+        "Solis AI's answers are read however the model lays them out. Before, answers written on one line were dropped, which also hurt story judgment.",
+        "Revisions keep the reactions and the read their edit was planned with."
       ],
-      "improved": [],
       "fixed": [],
-      "version": "0.22.0"
+      "version": "0.23.0"
     },
-    "companionVersion": "0.22.0",
-    "bridgeVersion": "0.22.0",
+    "companionVersion": "0.23.0",
+    "bridgeVersion": "0.23.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "28b59be5e3406914d3192b7a4c6ac5c7e1839d83535297c351a9938515299268",
+    "sha256": "f1a93242b5ddf4f7e871066a340a6f6bc1ef35ff1d1920bd35f763735127dd70",
     "releaseDate": "2026-10-24",
     "publishedBy": "junior"
   }

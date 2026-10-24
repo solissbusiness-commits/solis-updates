@@ -1,11 +1,11 @@
 {
-  "version": "0.23.0",
-  "notes": "Improved\n• Solis AI now reads what's said, not just how loud it is. A goodbye or a serious talk gets emotional or calm music instead of a hype intro. A video titled like a goodbye (\"… is leaving …\") counts as on\n• Sound effects: the punchlines, shocks, wins and fails Solis AI picks out get a sound, and so do big surprised reactions and laughs. In a sad stretch only a real joke gets one.\n• Every pop-up pops: images and labels now get their pop sound. Before, they were added after the sounds were planned, so they never got one. The same pop comes back for each pop-up, the way editors do;\n• Things named by what they are now pop up: \"Slob Clan\", \"group channel\", \"my first channel\", \"Minecraft channel\", \"YouTube shorts\", \"2 million subscribers\". So do games and people said in passing, like\n• Up to two a minute in Long Form, never two within 8 seconds. The same thing spelled two ways (\"Slob Clan\" and \"Slub Clan\") shows once. Talk about \"this video\" is never a pop-up.\n• Solis AI's answers are read however the model lays them out. Before, answers written on one line were dropped, which also hurt story judgment.\n• Revisions keep the reactions and the read their edit was planned with.",
-  "pub_date": "2026-10-24T02:57:00.311Z",
+  "version": "0.24.0",
+  "notes": "Improved\n• Risers: they build into big news, a reveal or a win, and into lines like \"I'll reveal this now…\". The riser peaks on the moment and stops; it never rings over the next line.\n• Whooshes: when the story jumps ahead (a minute or more cut out) and when a transition title slides in.\n• Awkward sounds (crickets, record scratch, the anime awkward sound) on an awkward or cringe beat.\n• Pings: a Discord, chat, text or call mention gets a notification sound.\n• Milestones: a pop-up of a number (\"2 million subscribers\") gets a ka-ching or shimmer instead of a plain pop.\n• Fails get the wrong-answer buzzer, not a happy ding.\n• Big news in a sad video gets a heavy, dramatic hit instead of a goofy one.\n• Sounds tied to something on screen always play (pop-ups, transitions, numbers, pings). The judgment calls (jokes, shocks, reveals, risers) keep to your style's pace.\n• Solis AI takes a second look at every joke, shock and reveal it picks, with the lines around it, and keeps only a clear yes. A one-word reply (\"Okay.\") never gets a sound.\n• Music fits what the video is about, so a goodbye isn't scored hype.\n• Pop-ups for channels, clans, games and numbers, and every pop-up gets its pop.",
+  "pub_date": "2026-10-24T03:50:21.457Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QklLS1hRdzUwK3M3VmUyMTFmYzVPUjkzUE5vMXBPNFBlbEdkcEN1MW9Cb2ZuYUUzckZiTC9yRDZ2VStBNnl0Sm1wcnB5dGNLbGF5TGdvTVZQUkVuVlFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODA4NTk5CWZpbGU6U29saXMgRWRpdF8wLjIzLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjMuMApXcVZEVlg4a3pvUDE5b3ZkZDRlTUdRdEo4SkJBTHNJQUxzSmhyTFZQUXNqZ2g2OGo2Wmp3YzJsR1BLZEpMQUVxdUpQbC9hTGN5eURXZ3NxTURldEhEQT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.23.0/Solis_0.23.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkNQOU52VzlvT3Zod2tHbWJqL2ZSQjZrYkdpUi9VT29KVE5iVVc0L3dXVFErZVRDTWtEcVBOM1Y1NjB3OHNtUVZGbkltMi93MzQrQ2FGNTBmWU56N1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODEyNDc3CWZpbGU6U29saXMgRWRpdF8wLjI0LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjQuMApqNDNtRDV5NzVWRkh1bmhtL2dWQnVITkdZMURoQ0k0blo3cURFU2lySVdxM3RWc3N6MHpWYnp1MDV2WXlNeDhzeW1jOHl5Zm9mcTh4WEZVcDJacUZEZz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.24.0/Solis_0.24.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -15,22 +15,26 @@
     "notes": {
       "new": [],
       "improved": [
-        "Solis AI now reads what's said, not just how loud it is. A goodbye or a serious talk gets emotional or calm music instead of a hype intro. A video titled like a goodbye (\"… is leaving …\") counts as on",
-        "Sound effects: the punchlines, shocks, wins and fails Solis AI picks out get a sound, and so do big surprised reactions and laughs. In a sad stretch only a real joke gets one.",
-        "Every pop-up pops: images and labels now get their pop sound. Before, they were added after the sounds were planned, so they never got one. The same pop comes back for each pop-up, the way editors do;",
-        "Things named by what they are now pop up: \"Slob Clan\", \"group channel\", \"my first channel\", \"Minecraft channel\", \"YouTube shorts\", \"2 million subscribers\". So do games and people said in passing, like",
-        "Up to two a minute in Long Form, never two within 8 seconds. The same thing spelled two ways (\"Slob Clan\" and \"Slub Clan\") shows once. Talk about \"this video\" is never a pop-up.",
-        "Solis AI's answers are read however the model lays them out. Before, answers written on one line were dropped, which also hurt story judgment.",
-        "Revisions keep the reactions and the read their edit was planned with."
+        "Risers: they build into big news, a reveal or a win, and into lines like \"I'll reveal this now…\". The riser peaks on the moment and stops; it never rings over the next line.",
+        "Whooshes: when the story jumps ahead (a minute or more cut out) and when a transition title slides in.",
+        "Awkward sounds (crickets, record scratch, the anime awkward sound) on an awkward or cringe beat.",
+        "Pings: a Discord, chat, text or call mention gets a notification sound.",
+        "Milestones: a pop-up of a number (\"2 million subscribers\") gets a ka-ching or shimmer instead of a plain pop.",
+        "Fails get the wrong-answer buzzer, not a happy ding.",
+        "Big news in a sad video gets a heavy, dramatic hit instead of a goofy one.",
+        "Sounds tied to something on screen always play (pop-ups, transitions, numbers, pings). The judgment calls (jokes, shocks, reveals, risers) keep to your style's pace.",
+        "Solis AI takes a second look at every joke, shock and reveal it picks, with the lines around it, and keeps only a clear yes. A one-word reply (\"Okay.\") never gets a sound.",
+        "Music fits what the video is about, so a goodbye isn't scored hype.",
+        "Pop-ups for channels, clans, games and numbers, and every pop-up gets its pop."
       ],
       "fixed": [],
-      "version": "0.23.0"
+      "version": "0.24.0"
     },
-    "companionVersion": "0.23.0",
-    "bridgeVersion": "0.23.0",
+    "companionVersion": "0.24.0",
+    "bridgeVersion": "0.24.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "f1a93242b5ddf4f7e871066a340a6f6bc1ef35ff1d1920bd35f763735127dd70",
+    "sha256": "fd79c2572f548f490e14518e4f5e6bfa803c8505b9a9e7cff9e3c40d8cd90640",
     "releaseDate": "2026-10-24",
     "publishedBy": "junior"
   }

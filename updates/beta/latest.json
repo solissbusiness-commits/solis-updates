@@ -1,11 +1,11 @@
 {
-  "version": "0.24.0",
-  "notes": "Improved\n• Risers: they build into big news, a reveal or a win, and into lines like \"I'll reveal this now…\". The riser peaks on the moment and stops; it never rings over the next line.\n• Whooshes: when the story jumps ahead (a minute or more cut out) and when a transition title slides in.\n• Awkward sounds (crickets, record scratch, the anime awkward sound) on an awkward or cringe beat.\n• Pings: a Discord, chat, text or call mention gets a notification sound.\n• Milestones: a pop-up of a number (\"2 million subscribers\") gets a ka-ching or shimmer instead of a plain pop.\n• Fails get the wrong-answer buzzer, not a happy ding.\n• Big news in a sad video gets a heavy, dramatic hit instead of a goofy one.\n• Sounds tied to something on screen always play (pop-ups, transitions, numbers, pings). The judgment calls (jokes, shocks, reveals, risers) keep to your style's pace.\n• Solis AI takes a second look at every joke, shock and reveal it picks, with the lines around it, and keeps only a clear yes. A one-word reply (\"Okay.\") never gets a sound.\n• Music fits what the video is about, so a goodbye isn't scored hype.\n• Pop-ups for channels, clans, games and numbers, and every pop-up gets its pop.",
-  "pub_date": "2026-10-24T03:50:21.457Z",
+  "version": "0.25.0",
+  "notes": "Improved\n• \"Cut this clip\": a note like \"cut this clip, it provides no value\" now cuts the whole clip under your playhead. Before, Solis looked for a spoken line there and gave up when there wasn't one. A note a\n• No more risers into nothing. A riser plays only when its hit actually lands; a riser whose hit didn't make it is removed. A line that only sets something up no longer gets a riser on its own.\n• No more random vine booms. The vine boom (and files like \"bass drop + vine boom\") is kept for meme moments. It's never used as a \"big moment\" hit, an intro zoom hit, or a pop-up's pop.\n• A joke sound needs someone to actually laugh, and a shock sound needs a real surprised face or voice. Solis AI's guess alone isn't enough.\n• Every pop-up gets the same clean pop, and it can repeat after 4 seconds.\n• A new track comes in in the pause before the line, never as someone starts talking. The old track fades out under it while the new one fades in.\n• Music that stops fades out over a second, and music that comes back fades in. A deliberate music cut (on a fail or a shock) stays a hard cut.",
+  "pub_date": "2026-10-24T07:02:47.622Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkNQOU52VzlvT3Zod2tHbWJqL2ZSQjZrYkdpUi9VT29KVE5iVVc0L3dXVFErZVRDTWtEcVBOM1Y1NjB3OHNtUVZGbkltMi93MzQrQ2FGNTBmWU56N1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODEyNDc3CWZpbGU6U29saXMgRWRpdF8wLjI0LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjQuMApqNDNtRDV5NzVWRkh1bmhtL2dWQnVITkdZMURoQ0k0blo3cURFU2lySVdxM3RWc3N6MHpWYnp1MDV2WXlNeDhzeW1jOHl5Zm9mcTh4WEZVcDJacUZEZz09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.24.0/Solis_0.24.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk0vcm42ZDlUTURQMXpueFByTUh4bldadXRoY1JLUHhqZTNRY3FZZ21aZGFBc1lBNElFaGNiblVwR3JGazRpVS81azVhdXU2RzM3RVNNaTBndnc3V1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODI0MjY3CWZpbGU6U29saXMgRWRpdF8wLjI1LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjUuMApuRTJabG1XeUUvQ1JIT00rZEo2S256S0cwclVNdmJ5Ui8vOFlXV3dBZmdzYlBRTSswK0hMS3VDcHI4NlUzZWxNaUNTaTFOUUhOVVd4ak5NdHBKWVBEQT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.25.0/Solis_0.25.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -15,26 +15,22 @@
     "notes": {
       "new": [],
       "improved": [
-        "Risers: they build into big news, a reveal or a win, and into lines like \"I'll reveal this now…\". The riser peaks on the moment and stops; it never rings over the next line.",
-        "Whooshes: when the story jumps ahead (a minute or more cut out) and when a transition title slides in.",
-        "Awkward sounds (crickets, record scratch, the anime awkward sound) on an awkward or cringe beat.",
-        "Pings: a Discord, chat, text or call mention gets a notification sound.",
-        "Milestones: a pop-up of a number (\"2 million subscribers\") gets a ka-ching or shimmer instead of a plain pop.",
-        "Fails get the wrong-answer buzzer, not a happy ding.",
-        "Big news in a sad video gets a heavy, dramatic hit instead of a goofy one.",
-        "Sounds tied to something on screen always play (pop-ups, transitions, numbers, pings). The judgment calls (jokes, shocks, reveals, risers) keep to your style's pace.",
-        "Solis AI takes a second look at every joke, shock and reveal it picks, with the lines around it, and keeps only a clear yes. A one-word reply (\"Okay.\") never gets a sound.",
-        "Music fits what the video is about, so a goodbye isn't scored hype.",
-        "Pop-ups for channels, clans, games and numbers, and every pop-up gets its pop."
+        "\"Cut this clip\": a note like \"cut this clip, it provides no value\" now cuts the whole clip under your playhead. Before, Solis looked for a spoken line there and gave up when there wasn't one. A note a",
+        "No more risers into nothing. A riser plays only when its hit actually lands; a riser whose hit didn't make it is removed. A line that only sets something up no longer gets a riser on its own.",
+        "No more random vine booms. The vine boom (and files like \"bass drop + vine boom\") is kept for meme moments. It's never used as a \"big moment\" hit, an intro zoom hit, or a pop-up's pop.",
+        "A joke sound needs someone to actually laugh, and a shock sound needs a real surprised face or voice. Solis AI's guess alone isn't enough.",
+        "Every pop-up gets the same clean pop, and it can repeat after 4 seconds.",
+        "A new track comes in in the pause before the line, never as someone starts talking. The old track fades out under it while the new one fades in.",
+        "Music that stops fades out over a second, and music that comes back fades in. A deliberate music cut (on a fail or a shock) stays a hard cut."
       ],
       "fixed": [],
-      "version": "0.24.0"
+      "version": "0.25.0"
     },
-    "companionVersion": "0.24.0",
-    "bridgeVersion": "0.24.0",
+    "companionVersion": "0.25.0",
+    "bridgeVersion": "0.25.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "fd79c2572f548f490e14518e4f5e6bfa803c8505b9a9e7cff9e3c40d8cd90640",
+    "sha256": "e719cf68f09fcd3ff8dfd8c54e87af985399c3c5cc637d66e08e65c089cc6631",
     "releaseDate": "2026-10-24",
     "publishedBy": "junior"
   }

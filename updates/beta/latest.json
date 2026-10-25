@@ -1,11 +1,11 @@
 {
-  "version": "0.27.0",
-  "notes": "Improved\n• A revision now changes the sequence you already have: no more V2, V3 and a full rebuild.\n• Solis takes out only what the revision changed and puts back only what's new. Clips that didn't change are only checked.\n• Cutting a clip re-places just the clips after it.\n• Changing a sound, the music or an image touches just that.\n• Framing and zooms are redone only for the shots that changed.\n• Only clips Solis placed are ever removed; anything you added yourself stays.\n• You can still undo the revision in Premiere (Ctrl+Z).\n• If the sequence isn't in the Premiere project anymore, Solis builds a new version as before.\n• As you type a note, Solis shows what it will do (\"Solis will: cut the clip at 1:23\") and which moment it means. That's your playhead, read from Premiere right then, unless you write a time like 1:23.\n• Write it however you'd say it. Solis AI (on your PC) works out what you mean when the wording is new: \"this part is kinda boring lol\" means tighten this part, \"can u make it funnier here\" means add a \n• Solis AI loads in the background when the revisions box opens. After that, each note is understood in well under a second.\n• \"Add a pop sound here\", \"put a whoosh here\" and \"use the other take at 1:05\" are understood now. Before, only exact phrases worked.\n• Forgetting the line, off-camera talk and recording talk are cut.\n• A big red X lands on fails, and aimed zooms whoosh in.",
-  "pub_date": "2026-10-25T07:08:14.852Z",
+  "version": "0.29.0",
+  "notes": "Improved\n• Closing the window hides Solis to the tray icon (bottom right of the taskbar) instead of quitting.\n• While it's hidden, edits keep going, tonight's queue keeps editing, revisions finish, and Premiere stays connected.\n• Click the tray icon, or open Solis from the Start menu, to bring it back. Right-click the tray icon to quit.\n• The first time you close it, a notification tells you Solis is still running.\n• To make closing quit Solis, turn off Settings > Keep Solis running when closed. An edit in progress still finishes first.\n• Fixed Solis sometimes not opening again after closing (it stayed in Task Manager).",
+  "pub_date": "2026-10-25T07:43:37.311Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk5telhSZ04yckxzNjZFYkhBTGRqT3Zzdzc1cXZ5dXNFbEhmVSt5ZjE2WVd0cm9LUndURGg4YlpkcjBjRmduM24ydnh2c0RGWmk2VzZCSnZGbHNxTFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTExODAyCWZpbGU6U29saXMgRWRpdF8wLjI3LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjcuMApzT25JYllkcDVBbVZ2WUlBU2xDNTY3NWRUZVo0d0JXVFFMVE40b0FKWnd2NkV5SlppQ2RqVXJ3UVpncGsxVU9MV3hiWmxJSnkyWm84V0JPRytHM2lBQT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.27.0/Solis_0.27.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkFKVmNVSjd1cElhbEsrZDI3bTVodzVTUDNEWTZlU3hIakRVNXpXR3I4OStRNUxabWNBUHkrZi84RENIUit2bUtvb1RLQkRxOTJZT3dSTDh0OXpUZlFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTE0MTM3CWZpbGU6U29saXMgRWRpdF8wLjI5LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjkuMAo0clRUaFFCUkMxdWhYNWxVSHc3Q3ZIaEdEUXNxTXVyWjlQMnRYQVJLaTBUT2R0dldJQ1g0bnl5a0ZxQnhLb0RqOGJJdlNSc2JxN1FEcWQ1QmpGWU5Ddz09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.29.0/Solis_0.29.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -15,29 +15,21 @@
     "notes": {
       "new": [],
       "improved": [
-        "A revision now changes the sequence you already have: no more V2, V3 and a full rebuild.",
-        "Solis takes out only what the revision changed and puts back only what's new. Clips that didn't change are only checked.",
-        "Cutting a clip re-places just the clips after it.",
-        "Changing a sound, the music or an image touches just that.",
-        "Framing and zooms are redone only for the shots that changed.",
-        "Only clips Solis placed are ever removed; anything you added yourself stays.",
-        "You can still undo the revision in Premiere (Ctrl+Z).",
-        "If the sequence isn't in the Premiere project anymore, Solis builds a new version as before.",
-        "As you type a note, Solis shows what it will do (\"Solis will: cut the clip at 1:23\") and which moment it means. That's your playhead, read from Premiere right then, unless you write a time like 1:23.",
-        "Write it however you'd say it. Solis AI (on your PC) works out what you mean when the wording is new: \"this part is kinda boring lol\" means tighten this part, \"can u make it funnier here\" means add a ",
-        "Solis AI loads in the background when the revisions box opens. After that, each note is understood in well under a second.",
-        "\"Add a pop sound here\", \"put a whoosh here\" and \"use the other take at 1:05\" are understood now. Before, only exact phrases worked.",
-        "Forgetting the line, off-camera talk and recording talk are cut.",
-        "A big red X lands on fails, and aimed zooms whoosh in."
+        "Closing the window hides Solis to the tray icon (bottom right of the taskbar) instead of quitting.",
+        "While it's hidden, edits keep going, tonight's queue keeps editing, revisions finish, and Premiere stays connected.",
+        "Click the tray icon, or open Solis from the Start menu, to bring it back. Right-click the tray icon to quit.",
+        "The first time you close it, a notification tells you Solis is still running.",
+        "To make closing quit Solis, turn off Settings > Keep Solis running when closed. An edit in progress still finishes first.",
+        "Fixed Solis sometimes not opening again after closing (it stayed in Task Manager)."
       ],
       "fixed": [],
-      "version": "0.27.0"
+      "version": "0.29.0"
     },
-    "companionVersion": "0.27.0",
-    "bridgeVersion": "0.27.0",
+    "companionVersion": "0.29.0",
+    "bridgeVersion": "0.29.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "4adcf6c97110d1f4734545caea34061719058c392da66ce12f919c3f9a926561",
+    "sha256": "87239729c655cea928da3e7e893ac41cdadf899d69d8ac50a43144c577947313",
     "releaseDate": "2026-10-25",
     "publishedBy": "junior"
   }

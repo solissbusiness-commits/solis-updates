@@ -1,11 +1,11 @@
 {
-  "version": "0.25.0",
-  "notes": "Improved\n• \"Cut this clip\": a note like \"cut this clip, it provides no value\" now cuts the whole clip under your playhead. Before, Solis looked for a spoken line there and gave up when there wasn't one. A note a\n• No more risers into nothing. A riser plays only when its hit actually lands; a riser whose hit didn't make it is removed. A line that only sets something up no longer gets a riser on its own.\n• No more random vine booms. The vine boom (and files like \"bass drop + vine boom\") is kept for meme moments. It's never used as a \"big moment\" hit, an intro zoom hit, or a pop-up's pop.\n• A joke sound needs someone to actually laugh, and a shock sound needs a real surprised face or voice. Solis AI's guess alone isn't enough.\n• Every pop-up gets the same clean pop, and it can repeat after 4 seconds.\n• A new track comes in in the pause before the line, never as someone starts talking. The old track fades out under it while the new one fades in.\n• Music that stops fades out over a second, and music that comes back fades in. A deliberate music cut (on a fail or a shock) stays a hard cut.",
-  "pub_date": "2026-10-24T07:02:47.622Z",
+  "version": "0.26.0",
+  "notes": "Improved\n• Forgetting the line is cut: \"wait, what do I say again\", \"what was I saying\", \"where was I\", \"I forgot my line\", \"let me try that again\", \"take two\", \"I messed up\". When it's in the middle of a longer\n• Off-camera talk is cut. A line said well under your normal voice to someone in the room (\"can you pass me the charger\", \"walk your character into the camera\") goes. So does anything so quiet it was cl\n• Quiet lines said to the viewer stay (\"let's go guys!\"), and so do lines said to someone in the game.\n• Recording talk is cut: \"can you hear me\", \"is this on\", \"hit record\", \"am I supposed to be recording\".\n• Words like \"start over\" or \"one more time\" are only cut when they are the whole line, so a story about starting over from the beginning stays.\n• A fail gets a big red X slammed on screen with a quick red flash, landing with the wrong-answer buzzer.\n• A zoom that punches onto something on screen (the text or thing you point at) whooshes in. That's at most one every 15 seconds, and never on a subtle face push.\n• \"Cut this clip\" cuts the clip under your playhead.\n• No risers into nothing, and no random vine booms.\n• Music changes in the pause, with a crossfade.",
+  "pub_date": "2026-10-25T05:55:03.817Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk0vcm42ZDlUTURQMXpueFByTUh4bldadXRoY1JLUHhqZTNRY3FZZ21aZGFBc1lBNElFaGNiblVwR3JGazRpVS81azVhdXU2RzM3RVNNaTBndnc3V1FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODI0MjY3CWZpbGU6U29saXMgRWRpdF8wLjI1LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjUuMApuRTJabG1XeUUvQ1JIT00rZEo2S256S0cwclVNdmJ5Ui8vOFlXV3dBZmdzYlBRTSswK0hMS3VDcHI4NlUzZWxNaUNTaTFOUUhOVVd4ak5NdHBKWVBEQT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.25.0/Solis_0.25.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkJlZGdia0FQWDYyeDZVK21PYXhVbmcwY3R3SGpnVUh4RUdMM1FhZWt1RTF4dTJwQ09TVU1VOFVjRDlGTk9kcmlaU3UxTjkvRUk2YXMzWExtZVB0M2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODcxNzk2CWZpbGU6U29saXMgRWRpdF8wLjI2LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjYuMAppVGhTZ2ZtdFV4T0VwaEg2UEU3WmwvUXVRWW1WOXMvdWZiRXl1OFlyY1REa2dsc2NSdDhxQkM0NytEV2x5eWRLZTFoMXlDd3ZBeDBrRWs0a0VGeVJBUT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.26.0/Solis_0.26.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -15,23 +15,26 @@
     "notes": {
       "new": [],
       "improved": [
-        "\"Cut this clip\": a note like \"cut this clip, it provides no value\" now cuts the whole clip under your playhead. Before, Solis looked for a spoken line there and gave up when there wasn't one. A note a",
-        "No more risers into nothing. A riser plays only when its hit actually lands; a riser whose hit didn't make it is removed. A line that only sets something up no longer gets a riser on its own.",
-        "No more random vine booms. The vine boom (and files like \"bass drop + vine boom\") is kept for meme moments. It's never used as a \"big moment\" hit, an intro zoom hit, or a pop-up's pop.",
-        "A joke sound needs someone to actually laugh, and a shock sound needs a real surprised face or voice. Solis AI's guess alone isn't enough.",
-        "Every pop-up gets the same clean pop, and it can repeat after 4 seconds.",
-        "A new track comes in in the pause before the line, never as someone starts talking. The old track fades out under it while the new one fades in.",
-        "Music that stops fades out over a second, and music that comes back fades in. A deliberate music cut (on a fail or a shock) stays a hard cut."
+        "Forgetting the line is cut: \"wait, what do I say again\", \"what was I saying\", \"where was I\", \"I forgot my line\", \"let me try that again\", \"take two\", \"I messed up\". When it's in the middle of a longer",
+        "Off-camera talk is cut. A line said well under your normal voice to someone in the room (\"can you pass me the charger\", \"walk your character into the camera\") goes. So does anything so quiet it was cl",
+        "Quiet lines said to the viewer stay (\"let's go guys!\"), and so do lines said to someone in the game.",
+        "Recording talk is cut: \"can you hear me\", \"is this on\", \"hit record\", \"am I supposed to be recording\".",
+        "Words like \"start over\" or \"one more time\" are only cut when they are the whole line, so a story about starting over from the beginning stays.",
+        "A fail gets a big red X slammed on screen with a quick red flash, landing with the wrong-answer buzzer.",
+        "A zoom that punches onto something on screen (the text or thing you point at) whooshes in. That's at most one every 15 seconds, and never on a subtle face push.",
+        "\"Cut this clip\" cuts the clip under your playhead.",
+        "No risers into nothing, and no random vine booms.",
+        "Music changes in the pause, with a crossfade."
       ],
       "fixed": [],
-      "version": "0.25.0"
+      "version": "0.26.0"
     },
-    "companionVersion": "0.25.0",
-    "bridgeVersion": "0.25.0",
+    "companionVersion": "0.26.0",
+    "bridgeVersion": "0.26.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "e719cf68f09fcd3ff8dfd8c54e87af985399c3c5cc637d66e08e65c089cc6631",
-    "releaseDate": "2026-10-24",
+    "sha256": "df4106cb0431131108d523d79d080eb1ffd2dbc6b81f129d074f07e2b4eef76d",
+    "releaseDate": "2026-10-25",
     "publishedBy": "junior"
   }
 }

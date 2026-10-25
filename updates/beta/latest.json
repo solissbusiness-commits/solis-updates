@@ -1,11 +1,11 @@
 {
-  "version": "0.26.0",
-  "notes": "Improved\n• Forgetting the line is cut: \"wait, what do I say again\", \"what was I saying\", \"where was I\", \"I forgot my line\", \"let me try that again\", \"take two\", \"I messed up\". When it's in the middle of a longer\n• Off-camera talk is cut. A line said well under your normal voice to someone in the room (\"can you pass me the charger\", \"walk your character into the camera\") goes. So does anything so quiet it was cl\n• Quiet lines said to the viewer stay (\"let's go guys!\"), and so do lines said to someone in the game.\n• Recording talk is cut: \"can you hear me\", \"is this on\", \"hit record\", \"am I supposed to be recording\".\n• Words like \"start over\" or \"one more time\" are only cut when they are the whole line, so a story about starting over from the beginning stays.\n• A fail gets a big red X slammed on screen with a quick red flash, landing with the wrong-answer buzzer.\n• A zoom that punches onto something on screen (the text or thing you point at) whooshes in. That's at most one every 15 seconds, and never on a subtle face push.\n• \"Cut this clip\" cuts the clip under your playhead.\n• No risers into nothing, and no random vine booms.\n• Music changes in the pause, with a crossfade.",
-  "pub_date": "2026-10-25T05:55:03.817Z",
+  "version": "0.27.0",
+  "notes": "Improved\n• A revision now changes the sequence you already have: no more V2, V3 and a full rebuild.\n• Solis takes out only what the revision changed and puts back only what's new. Clips that didn't change are only checked.\n• Cutting a clip re-places just the clips after it.\n• Changing a sound, the music or an image touches just that.\n• Framing and zooms are redone only for the shots that changed.\n• Only clips Solis placed are ever removed; anything you added yourself stays.\n• You can still undo the revision in Premiere (Ctrl+Z).\n• If the sequence isn't in the Premiere project anymore, Solis builds a new version as before.\n• As you type a note, Solis shows what it will do (\"Solis will: cut the clip at 1:23\") and which moment it means. That's your playhead, read from Premiere right then, unless you write a time like 1:23.\n• Write it however you'd say it. Solis AI (on your PC) works out what you mean when the wording is new: \"this part is kinda boring lol\" means tighten this part, \"can u make it funnier here\" means add a \n• Solis AI loads in the background when the revisions box opens. After that, each note is understood in well under a second.\n• \"Add a pop sound here\", \"put a whoosh here\" and \"use the other take at 1:05\" are understood now. Before, only exact phrases worked.\n• Forgetting the line, off-camera talk and recording talk are cut.\n• A big red X lands on fails, and aimed zooms whoosh in.",
+  "pub_date": "2026-10-25T07:08:14.852Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1QkJlZGdia0FQWDYyeDZVK21PYXhVbmcwY3R3SGpnVUh4RUdMM1FhZWt1RTF4dTJwQ09TVU1VOFVjRDlGTk9kcmlaU3UxTjkvRUk2YXMzWExtZVB0M2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODcxNzk2CWZpbGU6U29saXMgRWRpdF8wLjI2LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjYuMAppVGhTZ2ZtdFV4T0VwaEg2UEU3WmwvUXVRWW1WOXMvdWZiRXl1OFlyY1REa2dsc2NSdDhxQkM0NytEV2x5eWRLZTFoMXlDd3ZBeDBrRWs0a0VGeVJBUT09Cg==",
-      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.26.0/Solis_0.26.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSRytxSk1paUQ1Qk5telhSZ04yckxzNjZFYkhBTGRqT3Zzdzc1cXZ5dXNFbEhmVSt5ZjE2WVd0cm9LUndURGg4YlpkcjBjRmduM24ydnh2c0RGWmk2VzZCSnZGbHNxTFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyOTExODAyCWZpbGU6U29saXMgRWRpdF8wLjI3LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMjcuMApzT25JYllkcDVBbVZ2WUlBU2xDNTY3NWRUZVo0d0JXVFFMVE40b0FKWnd2NkV5SlppQ2RqVXJ3UVpncGsxVU9MV3hiWmxJSnkyWm84V0JPRytHM2lBQT09Cg==",
+      "url": "https://github.com/solissbusiness-commits/solis-updates/releases/download/v0.27.0/Solis_0.27.0_x64-setup.exe"
     }
   },
   "solis": {
@@ -15,25 +15,29 @@
     "notes": {
       "new": [],
       "improved": [
-        "Forgetting the line is cut: \"wait, what do I say again\", \"what was I saying\", \"where was I\", \"I forgot my line\", \"let me try that again\", \"take two\", \"I messed up\". When it's in the middle of a longer",
-        "Off-camera talk is cut. A line said well under your normal voice to someone in the room (\"can you pass me the charger\", \"walk your character into the camera\") goes. So does anything so quiet it was cl",
-        "Quiet lines said to the viewer stay (\"let's go guys!\"), and so do lines said to someone in the game.",
-        "Recording talk is cut: \"can you hear me\", \"is this on\", \"hit record\", \"am I supposed to be recording\".",
-        "Words like \"start over\" or \"one more time\" are only cut when they are the whole line, so a story about starting over from the beginning stays.",
-        "A fail gets a big red X slammed on screen with a quick red flash, landing with the wrong-answer buzzer.",
-        "A zoom that punches onto something on screen (the text or thing you point at) whooshes in. That's at most one every 15 seconds, and never on a subtle face push.",
-        "\"Cut this clip\" cuts the clip under your playhead.",
-        "No risers into nothing, and no random vine booms.",
-        "Music changes in the pause, with a crossfade."
+        "A revision now changes the sequence you already have: no more V2, V3 and a full rebuild.",
+        "Solis takes out only what the revision changed and puts back only what's new. Clips that didn't change are only checked.",
+        "Cutting a clip re-places just the clips after it.",
+        "Changing a sound, the music or an image touches just that.",
+        "Framing and zooms are redone only for the shots that changed.",
+        "Only clips Solis placed are ever removed; anything you added yourself stays.",
+        "You can still undo the revision in Premiere (Ctrl+Z).",
+        "If the sequence isn't in the Premiere project anymore, Solis builds a new version as before.",
+        "As you type a note, Solis shows what it will do (\"Solis will: cut the clip at 1:23\") and which moment it means. That's your playhead, read from Premiere right then, unless you write a time like 1:23.",
+        "Write it however you'd say it. Solis AI (on your PC) works out what you mean when the wording is new: \"this part is kinda boring lol\" means tighten this part, \"can u make it funnier here\" means add a ",
+        "Solis AI loads in the background when the revisions box opens. After that, each note is understood in well under a second.",
+        "\"Add a pop sound here\", \"put a whoosh here\" and \"use the other take at 1:05\" are understood now. Before, only exact phrases worked.",
+        "Forgetting the line, off-camera talk and recording talk are cut.",
+        "A big red X lands on fails, and aimed zooms whoosh in."
       ],
       "fixed": [],
-      "version": "0.26.0"
+      "version": "0.27.0"
     },
-    "companionVersion": "0.26.0",
-    "bridgeVersion": "0.26.0",
+    "companionVersion": "0.27.0",
+    "bridgeVersion": "0.27.0",
     "protocolVersion": 1,
     "migrationVersion": 1,
-    "sha256": "df4106cb0431131108d523d79d080eb1ffd2dbc6b81f129d074f07e2b4eef76d",
+    "sha256": "4adcf6c97110d1f4734545caea34061719058c392da66ce12f919c3f9a926561",
     "releaseDate": "2026-10-25",
     "publishedBy": "junior"
   }
